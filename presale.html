@@ -314,17 +314,8 @@
         }
         //here you can change the token and the presale contracts addresses
         let tokenAddress='TRXmYPy2AXZxacoSbKGjiVto8K1EqwexU7';
-        let roundsAddresses = [
-        'TM6Aks3vdzYtXK4ncntEBCyddpDoLYmthP',
-        'TLri8NVC24AYZWRGLCVxZX5NTTSKnnwvJG',
-        'TSitf3hX7WBa4Xbwghs4uGeMG7bCqsHEDD',
-        'TWBS9VPZpYdmaSSuMdVMoVH7xdYSftUueR'
-        ]
-        let contract1='TM6Aks3vdzYtXK4ncntEBCyddpDoLYmthP';
-        let contract2='TLri8NVC24AYZWRGLCVxZX5NTTSKnnwvJG';
-        let contract3='TSitf3hX7WBa4Xbwghs4uGeMG7bCqsHEDD';
-        let contract4='TWBS9VPZpYdmaSSuMdVMoVH7xdYSftUueR';
-
+        let roundsAddresses = ['TM6Aks3vdzYtXK4ncntEBCyddpDoLYmthP', 'TLri8NVC24AYZWRGLCVxZX5NTTSKnnwvJG', 'TSitf3hX7WBa4Xbwghs4uGeMG7bCqsHEDD', 'TWBS9VPZpYdmaSSuMdVMoVH7xdYSftUueR']
+        //here you can change the max trx per round, in order to change rounds
         let maxTrxPerRound = [4462500, 6687500, 8937500, 11162500]
         let roundPrices = [3.57, 5.35, 7.15, 8.93]
         let roundData
@@ -448,10 +439,10 @@
             shouldPollResponse: true
           }
 
-          if(round = 1) await contract1.withdraw().send(args)
-          if(round = 2) await contract2.withdraw().send(args)
-          if(round = 3) await contract3.withdraw().send(args)
-          if(round = 4) await contract4.withdraw().send(args)
+          if(round = 1) await c1.withdraw().send(args)
+          if(round = 2) await c2.withdraw().send(args)
+          if(round = 3) await c3.withdraw().send(args)
+          if(round = 4) await c4.withdraw().send(args)
         }
 
         timer = setInterval(function() {
