@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
+    <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/dataTables.responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css?ver=1.022" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css?ver=1.022" />
+    <link rel="icon" href="images/favicon.png" type="image/gif" sizes="10x16">
+    <title>Divs About - Divs</title>
+</head>
+<body style="background-image: url('images/inner-bg.jpg'); background-size: cover; background-position: top center; background-repeat: no-repeat;">
+    <!-- Header -->
+    <nav class="navbar navbar-expand-md wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.20s">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="LOGO"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav pull-right">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#exchangemodal">Exchange</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tokensale.html">Coin / Token List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="stake.html">Staking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Whitepaper.pdf">White Paper</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="presale.html">Presale</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">AboutUs</a>
+                    </li>
+                </ul>
+            </div>  
+        </div>
+    </nav>
+    <!-- Header -->
+
+    <div class="inner-main">
+        <!-- Token Sale -->
+        <div class="token-sale">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-purchases">
+                        <div class="token-wrapper">
+                            <div class="banner-form wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.60s">
+
+                                <form>
+                                    <div class="form-content-blk">
+                                        <div class="from-content-left">
+                                            <h5>Your Purchases</h5>
+                                        </div>
+                                    </div>
+                                    <div id="blur_div" class="disabled-div">
+                                    <div class="form-group-blk">
+                                        <label>Round 1</label>
+                                        <div class="flex-claim-outer">
+                                            <div class="form-group">
+                                                <div class="frm-drop">
+                                                    <select class="form-control">
+                                                        <option>DIVS</option>
+                                                    </select>
+                                                </div>
+                                                <input type="number" placeholder="1.000000" class="form-control"  id="round1">
+                                            </div>
+                                            <div class="form-claim-btn">
+                                                <button type="button" class="btn-main" id="claim1">Claim</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group-blk">
+                                        <label>Round 2</label>
+                                        <div class="flex-claim-outer">
+                                            <div class="form-group">
+                                                <div class="frm-drop">
+                                                    <select class="form-control">
+                                                        <option>DIVS</option>
+                                                    </select>
+                                                </div>
+                                                <input type="number" placeholder="1.000000" class="form-control" id="round2">
+                                            </div>
+                                            <div class="form-claim-btn">
+                                                <button type="button" class="btn-main" id="claim2">Claim</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group-blk">
+                                        <label>Round 3</label>
+                                        <div class="flex-claim-outer">
+                                            <div class="form-group">
+                                                <div class="frm-drop">
+                                                    <select class="form-control">
+                                                        <option>DIVS</option>
+                                                    </select>
+                                                </div>
+                                                <input type="number" placeholder="1.000000" class="form-control" id="round3">
+                                            </div>
+                                            <div class="form-claim-btn">
+                                                <button type="button" class="btn-main" id="claim3">Claim</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group-blk">
+                                        <label>Round 4</label>
+                                        <div class="flex-claim-outer">
+                                            <div class="form-group">
+                                                <div class="frm-drop">
+                                                    <select class="form-control">
+                                                        <option>DIVS</option>
+                                                    </select>
+                                                </div>
+                                                <input type="number" placeholder="1.000000" class="form-control" id="round4">
+                                            </div>
+                                            <div class="form-claim-btn">
+                                                <button type="button" class="btn-main" id="claim4">Claim</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                  </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" id="presale_div">
+                        <div class="token-wrapper">
+                            <div class="banner-form wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.60s">
+                                <div class="form-icon">
+                                    <img src="images/favicon.png" alt="icon">
+                                    <span id="current_round_dot">2</span>
+                                </div>
+                                <form>
+                                    <div class="form-content-blk">
+                                        <div class="from-content-left">
+                                            <h5>Round <font id = "current_round">1</h5>
+                                            <p>Price <span><font id="token_price">0</font> TRX</span></p>
+                                        </div>
+                                        <div class="from-content-right">
+                                            <h5>Time left</h5>
+                                            <p id="countdown">24h 20m 14s</p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group-blk">
+                                        <label>You Send</label>
+                                        <div class="form-group">
+                                            <div class="frm-drop">
+                                                <select class="form-control">
+                                                    <option>TRX</option>
+                                                </select>
+                                            </div>
+                                            <input id="trx_input" type="text" placeholder="0.00" class="form-control" min="2000">
+                                        </div>
+                                    </div>
+                                    <div class="form-group-blk">
+                                        <label>You get</label>
+                                        <div class="form-group">
+                                            <div class="frm-drop">
+                                                <select class="form-control">
+                                                    <option>DIVS</option>
+                                                </select>
+                                            </div>
+                                            <input id="divs_input" type="text" placeholder="0.00" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group-btn">
+                                        <button type="button" class="btn-main" id="buyBtn" href="#">Buy</button>
+                                    </div>
+                                    <div class="form-bottom-blk">
+                                        <div class="form-bottom-left">
+                                            <p>Your <span><font id="user_trx">0</font> TRX</span></p>
+                                        </div>
+                                        <div class="form-bottom-right">
+                                            <p>Total Raised <span><font id="raised_trx">100.000</font> TRX</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="form-bottom-blk">
+                                        <div class="form-bottom-left">
+                                            <p>Your tokens  <span><font id="your_total_tokens">0</font> DIVS</span></p>
+                                        </div>
+                                        <div class="form-bottom-right">
+                                            <p>Bought Tokens  <span><font id="total_bought_tokens">100.000</font> DIVS</span></p>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- End Token Sale -->
+    </div>
+
+     <div id="exchangemodal" class="modal fade ExchangeM" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+           <div class="banner-form"> 
+                <h4>Exchange</h4>
+                <form>
+                    <div class="form-group-blk">
+                        <label>You Send</label>
+                        <div class="form-group">
+                            <div class="frm-drop">
+                                <select class="form-control">
+                                    <option>ETH</option>
+                                    <option>ETH</option>
+                                    <option>ETH</option>
+                                </select>
+                            </div>
+                            <input type="number" placeholder="1.000000" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group-blk">
+                        <label>You get</label>
+                        <div class="form-group">
+                            <div class="frm-drop">
+                                <select class="form-control">
+                                    <option>TRX</option>
+                                    <option>TRX</option>
+                                    <option>TRX</option>
+                                </select>
+                            </div>
+                            <input type="number" placeholder="17473.355609" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group-btn">
+                        <button type="submit" class="btn-main">Exchange</button>
+                    </div>
+                </form>
+            </div> 
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.20s">
+        <div class="container">
+            <div class="footer-nav">
+                <div class="footer-logo">
+                    <a href="#"><img src="images/logo.png" alt="logo"></a>
+                </div>
+                <ul class="footer-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#exchangemodal">Exchange</a></li>
+                    <li><a href="tokensale.html">Coin / Token List</a></li>
+                    <li><a href="stake.html">Staking</a></li>
+                    <li><a href="Whitepaper.pdf">White Paper</a></li>
+                    <li><a href="presale.html">Presale</a></li>
+                    <li><a href="about.html">AboutUs</a></li>
+                </ul>
+                <ul class="footer-social">
+                    <li><a href="https://twitter.com/DivsExchange"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="http://divs.chat"><i class="fa fa-paper-plane"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-copyright">
+                <a href="#"><img src="images/cop-logo.png" alt="icon"></a>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script type="text/javascript" src="js/jquery.min.js"></script> 
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="js/dataTables.bootstrap.js"></script>
+    <script type="text/javascript" src="js/dataTables.responsive.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript">
+        //wow animation js
+        new WOW().init();
+
+        //data table js
+        $('.data-table').DataTable();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="text/javascript">
+
+        function roundToFour(num) {
+          return +(Math.floor(num + "e+4") + "e-4");
+        } 
+        function roundToTwo(num) {
+          return +(Math.floor(num + "e+2") + "e-2");
+        }
+        function round(num) {
+          return +(Math.floor(num + "e+0") + "e-0");
+        }
+        //here you can change the token and the presale contracts addresses
+        let tokenAddress='TRXmYPy2AXZxacoSbKGjiVto8K1EqwexU7';
+        let roundsAddresses = [
+        'TM6Aks3vdzYtXK4ncntEBCyddpDoLYmthP',
+        'TLri8NVC24AYZWRGLCVxZX5NTTSKnnwvJG',
+        'TSitf3hX7WBa4Xbwghs4uGeMG7bCqsHEDD',
+        'TWBS9VPZpYdmaSSuMdVMoVH7xdYSftUueR'
+        ]
+        //here you can change the max trx per round, in order to change rounds
+        let maxTrxPerRound = [4462500, 6687500, 8937500, 11162500]
+        let roundPrices = [3.57, 5.35, 7.15, 8.93]
+        let roundData
+        let endsAt
+        let toinvest=0
+        let myaddress
+        //once you deployed it to heroku, you will have an open app button, just open it and copy the url and paste it here
+        const axiosInstance = axios.create({
+          baseURL: 'https://divsdb.herokuapp.com/api/',
+          timeout: 1000,
+        })
+
+        async function getRoundData() {
+          const response = await axiosInstance.get('/rounds')
+          roundData = response.data
+          document.getElementById('current_round').innerHTML = response.data.currentRound
+          document.getElementById('current_round_dot').innerHTML = response.data.currentRound
+          if(response.data.currentRound>=5) $( "#blur_div" ).removeClass( "disabled-div" )
+          if(response.data.currentRound>=5) $( "#presale_div" ).addClass( "disabled-div" )
+        }
+
+        async function updatePrice() {
+          document.getElementById('token_price').innerHTML = roundPrices[(roundData.currentRound-1)]
+        }
+
+        async function updateBalances() {
+          const userTrx = await tronWeb.trx.getBalance(tronWeb.defaultAddress.base58)
+          const c1 = await tronWeb.trx.getBalance(roundsAddresses[0])
+          const c2 = await tronWeb.trx.getBalance(roundsAddresses[1])
+          const c3 = await tronWeb.trx.getBalance(roundsAddresses[2])
+          const c4 = await tronWeb.trx.getBalance(roundsAddresses[3])
+
+          const t1 = c1/roundPrices[0]
+          const t2 = c2/roundPrices[1]
+          const t3 = c3/roundPrices[2]
+          const t4 = c4/roundPrices[3]
+          document.getElementById('user_trx').innerHTML = roundToTwo(userTrx/1e6)
+          document.getElementById('raised_trx').innerHTML = roundToTwo((c1+c2+c3+c4)/1e6)
+          document.getElementById('total_bought_tokens').innerHTML = roundToTwo((t1+t2+t3+t4)/1e6)
+        }
+
+        async function updateTrxInput(value) {
+          console.log(value)
+          const tokenPrice = roundPrices[(roundData.currentRound-1)]
+          console.log(tokenPrice)
+          document.getElementById('trx_input').value = roundToFour(value*tokenPrice)
+        }
+
+        async function updateTokenInput(value) {
+            console.log(value)
+          const tokensPerTrx = 1/(roundPrices[(roundData.currentRound-1)])
+          document.getElementById('divs_input').value = roundToFour(value*tokensPerTrx)
+        }
+
+        async function invest() {
+            let tosend = document.getElementById('trx_input').value
+            if(tosend>350000) {
+              alert('You cannot buy more than 350K trx per round')
+              return
+            }
+            let contractTrxBalance = await tronWeb.trx.getBalance(roundsAddresses[(roundData.currentRound-1)])
+            contractTrxBalance = contractTrxBalance/1e6
+            const maxTrxThisRound = maxTrxPerRound[(roundData.currentRound-1)] - 1000
+            const trxBalAfterBuy = Number(contractTrxBalance) + Number(tosend)
+            if(trxBalAfterBuy>=maxTrxThisRound) {
+              let leftToBuyInTrx = maxTrxThisRound - contractTrxBalance
+              let leftToBuyInTokens = leftToBuyInTrx/roundPrices[(roundData.currentRound-1)]
+              leftToBuyInTrx = roundToTwo(leftToBuyInTrx)
+              leftToBuyInTokens = roundToTwo(leftToBuyInTokens)
+              alert('Not enough tokens left to buy \n There are still: '+leftToBuyInTokens+ ' divs or '+leftToBuyInTrx+' trx!')
+              return
+            }
+            tosend = tosend*1e6
+            let contractInstance = await tronWeb.contract().at(roundsAddresses[(roundData.currentRound-1)])
+            let args = {
+              callValue: window.tronWeb.toHex(round(tosend)),
+              feeLimit: 10000000,
+              shouldPollResponse: true
+            }
+            let result = await contractInstance.buy().send(args)
+        }
+
+        async function getClaimData() {
+          const c1 = await tronWeb.contract().at(roundsAddresses[0])
+          const c2 = await tronWeb.contract().at(roundsAddresses[1])
+          const c3 = await tronWeb.contract().at(roundsAddresses[2])
+          const c4 = await tronWeb.contract().at(roundsAddresses[3])
+
+          let r1 = await c1.boughtTokens(tronWeb.defaultAddress.base58).call()
+          let r2 = await c2.boughtTokens(tronWeb.defaultAddress.base58).call()
+          let r3 = await c3.boughtTokens(tronWeb.defaultAddress.base58).call()
+          let r4 = await c4.boughtTokens(tronWeb.defaultAddress.base58).call()
+
+          r1 = parseInt(r1._hex, 16)/1e8
+          r2 = parseInt(r2._hex, 16)/1e8
+          r3 = parseInt(r3._hex, 16)/1e8
+          r4 = parseInt(r4._hex, 16)/1e8
+
+          r1 = roundToTwo(r1)
+          r2 = roundToTwo(r2)
+          r3 = roundToTwo(r3)
+          r4 = roundToTwo(r4)
+
+          document.getElementById('round1').value = roundToTwo(r1)
+          document.getElementById('round2').value = roundToTwo(r2)
+          document.getElementById('round3').value = roundToTwo(r3)
+          document.getElementById('round4').value = roundToTwo(r4)
+
+          document.getElementById('your_total_tokens').innerHTML = Number(r1)+Number(r2)+Number(r3)+Number(r4)
+        }
+
+        async function claim(round) {
+          const c1 = await tronWeb.contract().at(roundsAddresses[0])
+          const c2 = await tronWeb.contract().at(roundsAddresses[1])
+          const c3 = await tronWeb.contract().at(roundsAddresses[2])
+          const c4 = await tronWeb.contract().at(roundsAddresses[3])
+
+          let args = {
+            callValue: 0,
+            feeLimit: 10000000,
+            shouldPollResponse: true
+          }
+
+          if(round = 1) await c1.withdraw().send(args)
+          if(round = 2) await c2.withdraw().send(args)
+          if(round = 3) await c3.withdraw().send(args)
+          if(round = 4) await c4.withdraw().send(args)
+        }
+
+        timer = setInterval(function() {
+          const startedAt = new Date(roundData.startedAt)
+          let endsAt = new Date(roundData.startedAt)
+          endsAt.setHours(startedAt.getHours() + roundData.duration[(roundData.currentRound-1)])
+          timeBetweenDates(endsAt);
+        }, 1000);
+
+        function timeBetweenDates(toDate) {
+         var dateEntered = toDate;
+         var now = new Date();
+         var difference = dateEntered.getTime() - now.getTime();
+         var seconds = Math.floor(difference / 1000);
+         var minutes = Math.floor(seconds / 60);
+         var hours = Math.floor(minutes / 60);
+         minutes %= 60;
+         seconds %= 60;
+         $("#countdown").text(hours+'h '+minutes+'m '+seconds+'s');
+        }
+
+        setInterval(()=>{
+          getRoundData()
+          updatePrice()
+          updateBalances()
+
+        }, 3000)
+        setInterval(()=>{
+          getClaimData()
+        }, 5000)
+
+        /*
+        accountInterval2 = setInterval(function () {
+        if(myaddress==false&&tronWeb.defaultAddress.base58 != false) location.reload();
+          if(myaddress!=tronWeb.defaultAddress.base58){
+              myaddress = tronWeb.defaultAddress.base58;
+        }
+        if (typeof window.tronWeb !== 'undefined'){
+        if(tronWeb.defaultAddress.base58 != false){
+        document.getElementById("installmetamask").style.display = "none";
+        console.log('started');
+         start();
+        }
+        }
+        }, 2000);
+        */
+        $( document ).ready(function() {
+            $('#trx_input').keyup( function() {
+              updateTokenInput($('#trx_input')[0].value)
+            })
+            $('#divs_input').keyup( function() {
+              updateTrxInput($('#divs_input')[0].value)
+            })
+            $('#buyBtn').click( function() {
+              invest()
+            })
+            $('#claim1').click( function() {
+              claim(1)
+            })
+            $('#claim2').click( function() {
+              claim(2)
+            })
+            $('#claim3').click( function() {
+              claim(3)
+            })
+            $('#claim4').click( function() {
+              claim(4)
+            })
+        })
+    </script>
+    <style>
+      .disabled-div {
+        pointer-events: none;
+        -webkit-filter: blur(4px);
+        -moz-filter: blur(4px);
+        -ms-filter: blur(4px);
+        -o-filter: blur(4px);
+        filter: blur(4px);
+      }
+    </style>s
+</body>
+</html>

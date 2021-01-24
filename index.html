@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css?ver=1.022" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css?ver=1.022" />
+    <link rel="icon" href="images/favicon.png" type="image/gif" sizes="10x16">
+    <title>Home - Divs</title>
+</head>
+<body style="background-color: #110f1e;">
+    <!-- Header -->
+    <nav class="navbar navbar-expand-md wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.20s">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="LOGO"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav pull-right">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#exchangemodal">Exchange</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tokensale.html">Coin / Token List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="stake.html">Staking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Whitepaper.pdf">White Paper</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="presale.html">Presale</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">AboutUs</a>
+                    </li>
+                </ul>
+            </div>  
+        </div>
+    </nav>
+    <!-- Header -->
+    
+    <!-- Banner -->
+    <section class="banner-container">
+        <div class="container">
+            <div class="banner-wrapper">
+                <div class="row">
+                    <div class="col-md-6 col-lg-8">
+                        <div class="banner-details wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.60s"> 
+                            <h1>An <span>easy-to-use</span> cryptocurrency exchange that rewards you Tron</h1>
+                            <p>0.5% of the total exchange volume is distributed to the DIVS token holders as Tron rewards.</p>
+                            <a href="Whitepaper.pdf" class="btn-main">Learn More</a>
+                        </div>
+                    </div> 
+                    <div class="col-md-6 col-lg-4">
+                        <div class="banner-form wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.60s"> 
+                                <div class="form-icon">
+                                    <img src="images/favicon.png" alt="icon">
+                                </div>
+                             <!--        <iframe class="widget__frame" style="border: 0 !important;border-radius: 6px !important" src="https://godex.io/widget?aff_id=rz5ukL2BqGLbqHQr&coin_from=ETH&coin_to=TRX&amount=1&accent_color=1367E8"
+                                    width="100%"
+                                    height="286"
+                                    scrolling="no"
+                                    border ="none;">
+                                      Can't load widget
+                               </iframe> -->
+                                <div>
+                                    <div class="form-content-blk">
+                                        <div class="from-content-left">
+                                            <h5>Exchange</h5>
+                                        </div>
+                                    </div>
+                                    <div class="exchangeformsteps">
+                                        <div id="exchs1">
+                                            <div class="form-group-blk">
+                                                <label>You Send</label>
+                                                <div class="form-group">
+                                                    <div class="frm-drop">
+                                                        <select class="form-control valsel" >
+                                                            <option value="ETH" >ETH</option>
+                                                            <option value="BTC" selected>BTC</option>
+                                                            <option value="XMR">XMR</option>
+                                                        </select>
+                                                    </div>
+                                                    <input type="number" placeholder="1.000000" class="form-control" value="1" id="sendamt">
+                                                </div>
+                                            </div>
+                                            <div class="form-group-blk">
+                                                <label>You get</label>
+                                                <div class="form-group">
+                                                    <div class="frm-drop">
+                                                        <select class="form-control getsel">
+                                                             <option value="XMR" selected>XMR</option>
+                                                             <option value="ETH">ETH</option>
+                                                            <option value="BTC" >BTC</option>
+                                                            
+                                                        </select>
+                                                    </div>
+                                                    <input type="text" placeholder="0" class="form-control" id="receiveamt">
+                                                </div>
+                                            </div>
+                                            <div class="form-group-btn">
+                                                <button  class="btn-main winforward">Exchange</button>
+                                            </div>
+                                        </div>
+
+                                        <div id="exchs2">
+                                            <div class="form-group-blk exstp3">
+                                                <label>Your Wallet address</label>
+                                                <div class="form-group">
+                                                    <input type="text"   class="form-control"  id="receipaddrss">
+                                                </div>
+                                            </div>
+                                            <div class="form-group-blk exstp3s">
+                                                <label>Send to the address below</label>
+                                                <div class="form-group">
+                                                    <div id="sentvalname"></div>
+                                                    <div id="address"></div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group-blk getwhat">
+                                                <label>You get</label>
+                                                <div class="form-group">
+                                                    <div id="geticon">trx</div>
+                                                    <div id="getvalue">5466</div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group-btn">
+                                                <button  class="btn-main winbackward">Back</button><button type="submit" class="btn-main winforward" id="exchbtncontent">Exchange</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Banner -->
+
+    <!-- Advantage -->
+    <section class="advantage-container">
+        <div class="container">
+            <div class="title-main wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.20s">
+                <h2>Advantages of Divs.io</h2>
+            </div>
+            <div class="advantage-wrap wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.60s">
+                <ul>
+                    <li>
+                        <span><img src="images/icons/ic-01.png" alt="icon"></span>
+                        <p>Low Fees from 1%, with no sign-up or registration needed.</p>
+                    </li>
+                    <li>
+                        <span><img src="images/icons/ic-02.png" alt="icon"></span>
+                        <p>Using a trusted 3rd party API for processing exchanges.</p>
+                    </li>
+                    <li>
+                        <span><img src="images/icons/ic-03.png" alt="icon"></span>
+                        <p>Exchanging is easy and completed in as little as 5-30mins.</p>
+                    </li>
+                    <li>
+                        <span><img src="images/icons/ic-04.png" alt="icon"></span>
+                        <p>Over 200 of your favorite coins/tokens to exchange from</p>
+                    </li>
+                    <li>
+                        <span><img src="images/icons/ic-05.png" alt="icon"></span>
+                        <p>Become a token holder and receive weekly rewards in Tron.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- End Advantage -->
+
+    <!-- How It Works -->
+    <section class="how-works">
+        <div class="container">
+            <div class="works-wrapper">
+                <div class="works-details">
+                    <div class="title-main wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.20s">
+                        <h2>How it Works</h2>
+                    </div>
+
+                    <p class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.40s">Providing a Cryptocurrency Exchange Service with anonymity and zero transaction limits. Choose from over 200+ of your favorite coins/tokens to exchange from, with 3 easy steps and finished in as little as 5-30 minutes. We make Exchanging Crypto easy by searching for the best rate across major exchanges and without you needing to creating an account or login.</p>
+
+                    <p class="wow fadeInDown" data-wow-duration="1.2s" data-wow-delay="0.60s">Become a DIVS  token holder and receive your share of the Tron rewards, .5% of the total exchange volume gets distributed every week to the DIVS token holders who stake.</p>
+
+                    <a href="Whitepaper.pdf" class="btn-main wow fadeInDown" data-wow-duration="1.4s" data-wow-delay="0.80s">Whitepaper</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End How It Works -->
+
+    <!-- Quote -->
+    <section class="quote-container">
+        <div class="container">
+            <div class="quote-title wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.20s">
+                <span class="quote-img"><img src="images/icons/quote-icon.png" alt="icons"></span>
+                <p>"We're Giving the exchange fees back to the people"</p>
+            </div>
+            <div class="quote-wrapper">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="quote-block wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.40s">
+                           <!--  <h2>Infographik</h2> -->
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="quote-headline wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.60s">
+                            <h5>A New Concept</h5>
+
+                            <p>Divs, The first exchange to reward users with the exchange fees. We’ve changed the old concept of the exchange rewarding users to personally exchange large amounts of cryptocurrency only to discount future trades. Instead we tally up the majority exchange fees equivalent to .5% of the total exchange volume and distribute it to the DIVS tokens holders who stake. This allows users to buy DIVS tokens and earn exchange fees as weekly rewards in Tron. Staking enough Divs tokens could earn you even more in rewards then you are paying in exchange fees, making exchanges virtually free and then some!</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="quote-headline wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.60s">
+                            <h5>Divs as a Service</h5>
+
+                            <p>Divs integration services can provide other crypto projects and websites with the same exchange service directly integrated into their sites, even with their own look, feel and coins. Thus providing project owners with an onramp, driving users with other coins/tokens into their ecosystems with ease. Project owners can then buy DIVS tokens, stake, and generate weekly Tron rewards for their own team or community. These integrations can give projects a consistent stream of Tron rewards, while strengthening the Divs ecosystem by providing more exchange volume and more Tron rewards.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="quote-headline wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.60s">
+                            <h5>The pinnacle of DIVS</h5>
+
+                            <p>Our finite token supply, rewards in Tron, and distributed exchange will be the pinnacle to our success at divs.io. By generating rewards in another cryptocurrency other than our own allows users the possibility to receive rewards without the DIVS token supply inflating. This also gives users the ability to buy more DIVS tokens with their weekly Tron rewards, compounding their DIVS tokens and creating positive price movement. As the Divs exchange gets integrated into more projects its coverage and volume will also scale, as do the amount of project owners who will need to buy DIVS tokens to earn the Tron rewards. In all these fundamentals will bring excellent sustainability to the Divs ecosystem and exchange integrated partners.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Quote -->
+
+    <!-- How It Works -->
+    <section class="how-works">
+        <div class="container">
+            <div class="works-wrapper">
+                <div class="works-details">
+                    <div class="title-main wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.20s">
+                        <h2>Presale coming  January 9th</h2>
+                    </div>
+
+                    <p class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.40s">Join us for our Token presale on Jan. 9th at 4pm UTC to get your DIVS tokens early before the public. The presale will consist of 4 rounds with 1,250,000 Divs tokens pre round. Each round will be more expensive than the last and each round will end after the timer is up or the round is bought out, whatever comes first. 50% of the supply being sold in the presale with another 15% provided as liquidity after the presale is over. </p>
+
+                    <p class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.60s">To participate in the presale one needs to have Tron in their tronlink.org wallet. For more details on DIVS, the presale, and token allocation be sure to check out the DIVS.io whitepaper</p>
+                    
+                    <ul class="btn-group wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.80s">
+                        <li><a href="presale.html" class="btn-main">Presale</a></li>
+                        <li><a href="Whitepaper.pdf" class="btn-main">Whitepaper</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End How It Works -->
+
+    <!-- RoadMap -->
+    <section class="road-map">
+        <div class="container">
+            <div class="title-main wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.20s">
+                <h2>Roadmap</h2>
+            </div>
+            <div class="roadmap-wrap wow fadeInDown mobilehide" data-wow-duration="1s" data-wow-delay="0.40s">
+                <ul class="top-q">
+                    <li class="q-up"><p>V1. Website & exchange API development & integration</p> <span class="q-green">Q2</span></li>
+                    <li class="q-up"><p>Development of the Divs rewards smart contract & UI</p> <span class="q-green">Q4</span></li>
+                    <li class="q-up"><p>Integrate the Divs exchange with other companies websites, apps & dapps generating more volume</p> <span class="q-green">Q1</span></li>
+                    <li class="q-up"><p>The DIVS Token Presale launches on Jan 9th</p> <span class="q-cream">Q1</span></li>
+                    <li class="q-up"><p>DIVS mobile app to launch in Q2</p> <span class="q-cream">Q2</span></li>
+                </ul>
+                <div class="roadmap-line-blk">
+                    <span class="roadmap-line"></span>
+                </div>
+                <ul class="bottom-q">
+                    <li class="q-down"><span class="q-green">Q3</span> <p>The DIVS.io V1 . website and exchange is Launched</p></li>
+                    <li class="q-down"><span class="q-green">Q1</span><p>DIVS.io V2. Website is launched Jan 2</p></li>
+                    <li class="q-down"><span class="q-cream">Q1</span> <p>The DIVS Token and staking contract is Set to launch in Q1 2021</p></li>
+                    <li class="q-down"><span class="q-cream">Q1</span> <p>Last DIVS on Justswap.io after the presale, then run a marketing campaign to build adoption</p></li>
+                    <li class="q-down"><span class="q-cream">Q2</span> <p>Build a core compounding contract as on edition to the ecosystem</p></li>
+                </ul>
+            </div>
+
+            <!--- timeline to be show in  mobile -->
+            <div class="roadmap-wrap wow fadeInDown mobileshow" data-wow-duration="1s" data-wow-delay="0.40s">
+                <ul class="top-q">
+                    <li class="q-up"><p>V1. Website & exchange API development & integration</p> <span class="q-green">Q2</span></li>
+                    <li class="q-down"><span class="q-green">Q3</span> <p>The DIVS.io V1 . website and exchange is Launched</p></li>
+                    <li class="q-up"><p>Development of the Divs rewards smart contract & UI</p> <span class="q-green">Q4</span></li>
+                    <li class="q-down"><span class="q-green">Q1</span><p>DIVS.io V2. Website is launched Jan 2</p></li>
+                    <li class="q-up"><p>Integrate the Divs exchange with other companies websites, apps & dapps generating more volume</p> <span class="q-green">Q1</span></li>
+                </ul>
+                <div class="roadmap-line-blk">
+                    <span class="roadmap-line"></span>
+                </div>
+                <ul class="bottom-q">                    
+                    <li class="q-down"><span class="q-cream">Q1</span> <p>The DIVS Token and staking contract is Set to launch in Q1 2021</p></li>
+                    <li class="q-up"><p>The DIVS Token Presale launches on Jan 9th</p> <span class="q-cream">Q1</span></li>
+                    <li class="q-down"><span class="q-cream">Q1</span> <p>Last DIVS on Justswap.io after the presale, then run a marketing campaign to build adoption</p></li>
+                    <li class="q-up"><p>DIVS mobile app to launch in Q2</p> <span class="q-cream">Q2</span></li>
+                    <li class="q-down"><span class="q-cream">Q2</span> <p>Build a core compounding contract as on edition to the ecosystem</p></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- End RoadMap -->
+
+    <div id="exchangemodal" class="modal fade ExchangeM" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+           <div class="banner-form"> 
+                <h4>Exchange</h4>
+                <form>
+                    <div class="form-group-blk">
+                        <label>You Send</label>
+                        <div class="form-group">
+                            <div class="frm-drop">
+                                <select class="form-control">
+                                    <option>ETH</option>
+                                    <option>ETH</option>
+                                    <option>ETH</option>
+                                </select>
+                            </div>
+                            <input type="number" placeholder="1.000000" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group-blk">
+                        <label>You get</label>
+                        <div class="form-group">
+                            <div class="frm-drop">
+                                <select class="form-control">
+                                    <option>TRX</option>
+                                    <option>TRX</option>
+                                    <option>TRX</option>
+                                </select>
+                            </div>
+                            <input type="number" placeholder="17473.355609" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group-btn">
+                        <button type="submit" class="btn-main">Exchange</button>
+                    </div>
+                </form>
+            </div> 
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.20s">
+        <div class="container">
+            <div class="footer-nav">
+                <div class="footer-logo">
+                    <a href="#"><img src="images/logo.png" alt="logo"></a>
+                </div>
+                <ul class="footer-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#exchangemodal">Exchange</a></li>
+                    <li><a href="tokensale.html">Coin / Token List</a></li>
+                    <li><a href="stake.html">Staking</a></li>
+                    <li><a href="Whitepaper.pdf">White Paper</a></li>
+                    <li><a href="presale.html">Presale</a></li>
+                    <li><a href="about.html">AboutUs</a></li>
+                </ul>
+                <ul class="footer-social">
+                    <li><a href="https://twitter.com/DivsExchange"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="http://divs.chat"><i class="fa fa-paper-plane"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-copyright">
+                <a href="#"><img src="images/cop-logo.png" alt="icon"></a>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script type="text/javascript" src="js/jquery.min.js"></script> 
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript">
+        //wow animation js
+        new WOW().init();
+    </script>
+    <script type="text/javascript">
+        
+        var sendval = $("select.valsel").children("option:selected").val();
+        var getval = $("select.getsel").children("option:selected").val();
+        var sendmoney = $("#sendamt").val();
+        getresponse();
+        function getresponse(){
+            let settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": "https://api.godex.io/api/v1/info",
+            "method": "POST",
+            "data": {
+                "from": sendval,
+                "to": getval,
+                "amount": sendmoney
+            },
+                "headers": {
+                    "accept": "application/json"
+                }
+            }
+
+            $.ajax(settings).done(function (response) {
+                $("#receiveamt").val(response.amount);
+                $("#geticon").text(getval);
+                $("#getvalue").text(response.amount);
+                $("#sentvalname").text(sendval);
+                
+            });
+        }
+
+
+        $("select.valsel").change(function(){
+            sendval = $(this).children("option:selected").val();
+            getresponse();
+        });
+        $("select.getsel").change(function(){
+            getval = $(this).children("option:selected").val();
+            getresponse();
+        });
+        $("#sendamt").on("input", function(){
+          sendmoney = $(this).val();
+          getresponse();
+        });
+
+
+
+
+
+
+
+        function createtransaction(){
+            var usraddress = $("#receipaddrss").val();
+            let settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": "https://api.godex.io/api/v1/transaction",
+                "method": "POST",
+                "data": {
+                    "coin_from": sendval,
+                    "coin_to": getval,
+                    "deposit_amount": sendmoney,
+                    "withdrawal": usraddress ,
+                    // "affiliate_id": "rz5ukL2BqGLbqHQr",
+                    "withdrawal_extra_id": "qbGDbH9gwrAkJTM6gxsfQpWYMfe8zRuZsSpoU77sx73peCPbzdZaUWW9tKWbBDs3hmeV",
+                    "return": "LsZK2wfxvXrfsfB6L39qmCcV5DK29ismmAwN41",
+                    "return_extra_id": "qbGDbH9gwrAkfJTM6gxsfQpWYMfe8zRuZsSpoU77sx73peCPbzdZaUWW9tKWbBDs3hmeV",
+                    "affiliate_id": "yWSiyDh93J7NPDNY"
+            },
+                "headers": {
+                    "accept": "application/json"
+                }
+            }
+
+            $.ajax(settings).done(function (response) {
+                console.log(response);
+                $("#address").text(response.return)
+                
+                // getstatus("600ab43410355")
+                // setInterval(getstatus(response.transaction_id), 500);
+                // setInterval(getstatus("600ab43410355"), 500);
+                setInterval(function() { 
+                   getstatus(response.transaction_id)
+                }, 800); 
+            });
+        }
+
+
+        function getstatus(statusresponse){
+            var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": "https://api.godex.io/api/v1/transaction/"+statusresponse+"/status",
+                "method": "GET",
+                "headers": {
+                    "accept": "application/json"
+                }
+            }
+
+            $.ajax(settings).done(function (response) {
+                console.log(response);
+                if(response == "wait"){
+                    $("#exchbtncontent").text("Waiting for confirmation")
+                }
+                else if(response == "confirmed"){
+                    $("#exchbtncontent").text("Confirmed")
+                }else{
+                    $("#exchbtncontent").text("dont nkow")
+                }
+            });
+        }
+
+
+
+
+        // stepss working
+        var slidenum = 1;
+        $(".exstp3s").hide()
+        function currwindow(){
+            if(slidenum == 1){
+                $("#exchs1").show();
+                $("#exchs2").hide()
+            }
+            else if(slidenum == 2){
+                $("#exchs1").hide();
+                $("#exchs2").show()
+            }
+            else if(slidenum == 3){
+                $(".exstp3").hide();
+                $(".exstp3s").show();
+                $(".winbackward").hide();
+                createtransaction();
+            }else if(slidenum ==4){
+
+            }
+
+            console.log(slidenum)
+
+        }
+
+        $(".winforward").click(function(){
+            slidenum = slidenum+1;
+            currwindow()
+            
+        });
+        $(".winbackward").click(function(){
+            slidenum = slidenum - 1;
+            currwindow()
+        });
+
+
+        
+    </script>
+</body>
+</html>

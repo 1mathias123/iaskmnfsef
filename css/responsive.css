@@ -1,0 +1,1685 @@
+@media(min-width:2560px){
+	/*comman*/
+	.container{
+		width: 1330px;
+		max-width: 1330px;
+	}
+	/*comman end*/
+}
+@media(min-width:2000px) and (max-width:2560px){
+	/*comman*/
+	.container{
+		width: 1330px;
+		max-width: 1330px;
+	}
+	/*comman end*/
+}
+@media(min-width:1800px) and (max-width:1999px){
+	/*comman*/
+	.container{
+		max-width: 1330px;
+		width: 1330px;
+	}
+	/*comman end*/
+}
+@media(min-width:1551px) and (max-width:1799px){
+	/*comman*/
+	.container{
+		max-width: 1330px;
+		width: 1330px;
+	}
+	/*comman end*/
+}
+@media(min-width:1351px) and (max-width:1550px){
+	/*comman*/
+	.container{
+		max-width: 1330px;
+		width: 1330px;
+	}
+	/*comman end*/
+}
+@media(min-width:1200px) and (max-width:1350px){
+	/*comman*/
+	.btn-main{
+		font-size: 16px;
+	}
+
+	p{
+		font-size: 16px;
+	}
+	/*comman end*/
+	/*index*/
+	.banner-details h1{
+		font-size: 42px;
+	}
+	.banner-details p{
+		font-size: 20px;
+		line-height: 38px;
+	}
+
+	.banner-form .form-icon{
+	    right: 55px;
+	    top: -54px;
+	    width: 80px;
+	}
+	.banner-form label{
+		font-size: 14px;
+	}
+	.banner-form .form-control{
+		font-size: 16px;
+		padding-left: 95px;
+	}
+	.banner-form select.form-control{
+	}
+	.banner-form .btn-main{
+		font-size: 16px;
+	}
+
+	.advantage-wrap li{
+		padding: 35px;
+	}
+	.advantage-wrap li span{
+	    min-height: 178px;
+	}
+	.advantage-wrap li span img{
+		max-width: 80%;
+	}
+	.advantage-wrap li p{
+		font-size: 13px;
+		margin-bottom: 0;
+	}
+
+	.road-map{
+		padding: 100px 0 50px;
+	}
+	.roadmap-wrap{
+		margin-top: 60px;
+	}
+	.roadmap-wrap ul li p{
+		font-size: 14px;
+		line-height: 24px;
+	}
+
+	.works-details p{
+		font-size: 16px;
+		line-height: 40px;
+	}
+
+	.footer-list li{
+		margin-right: 38px;
+	}
+	.footer-list li a{
+		font-size: 16px;
+	}
+	/*index end*/
+	/*inner page*/
+	.token-wrapper .form-icon{
+ 	 	right: 50%;
+  		transform: translate(50%, 0);
+	}
+
+	/*Exchange Rate*/
+	.title-search .form-control{
+		padding-left: 40px;
+	}
+	.table tbody td.pr-cn span,
+	.table tbody td.pr-down span,
+	.table tbody td.pr-up span,
+	.table tbody td p{
+		font-size: 14px;
+	}
+	.table tbody td.pr-cn,
+	.table tbody td.pr-down,
+	.table tbody td.pr-up{
+		padding-right: 7px;
+	}
+	/*Exchange Rate end*/
+	/* Divs Stake */
+	.divs-form{
+		padding-bottom: 0px;
+	}
+	.divs-form-wrapper h2{
+		font-size: 34px;
+	}
+
+	.divs-form-blk label{
+		font-size: 13px;
+	}
+	.divs-form-blk .form-control{
+		font-size: 14px;
+	}
+
+	.form-msg{
+		min-width: 340px;
+	}
+	.form-msg p{
+		width: 100%;
+	}
+
+	.faqs-container .title-main{
+		margin-bottom: 50px;
+	}
+	/* Divs Stake end */
+	/*inner page end*/
+}
+@media(min-width:1025px) and (max-width:1199px){
+	/*comman*/
+	.btn-main{
+		font-size: 14px;
+	}
+
+	p{
+		font-size: 16px;
+	}
+
+	.title-main h2{
+		font-size: 36px;
+	}
+	/*comman end*/
+	/*header*/
+	.navbar .navbar-nav>li>a{
+		font-size: 14px;
+	}
+	/*header end*/
+	/*index*/
+	.banner-details h1{
+		font-size: 36px;
+	}
+	.banner-details p{
+		font-size: 20px;
+		line-height: 38px;
+		padding-right: 80px;
+	}
+
+	.banner-form{
+		padding: 28px 25px;
+	}
+	.banner-form .form-icon{
+	    right: 55px;
+	    top: -54px;
+	    width: 80px;
+	}
+	.banner-form label{
+		font-size: 14px;
+	}
+	.banner-form .form-control{
+		font-size: 14px;
+		padding-left: 95px;
+	}
+	.banner-form .btn-main{
+		font-size: 14px;
+	}
+
+	.advantage-wrap li{
+		padding: 25px;
+		min-height: 360px;
+	}
+	.advantage-wrap li span{
+	    min-height: 178px;
+	}
+	.advantage-wrap li span img{
+		max-width: 66%;
+	}
+	.advantage-wrap li p{
+		font-size: 13px;
+		margin-bottom: 0;
+	}
+
+	.road-map{
+		padding: 100px 0 50px;
+	}
+	.roadmap-wrap{
+		margin-top: 60px;
+	}
+	.roadmap-wrap ul li p{
+		font-size: 14px;
+		line-height: 24px;
+	}
+
+	.works-details p{
+		font-size: 16px;
+		line-height: 40px;
+	}
+
+	.quote-headline{
+	    padding: 30px;
+	}
+	.quote-headline p{
+		font-size: 14px;
+		margin-bottom: 20px;
+	}
+
+	.footer-list li{
+		margin-right: 30px;
+	}
+	.footer-list li a{
+		font-size: 14px;
+	}
+	/*index end*/
+	/*inner page*/
+	.token-wrapper .form-icon{
+ 	 	right: 50%;
+  		transform: translate(50%, 0);
+	}
+
+	/*Exchange Rate*/
+	.rate-table-blk{
+		padding: 15px;
+	}
+	.title-search .form-control{
+		padding-left: 40px;
+	}
+	.table tbody td.pr-cn span,
+	.table tbody td.pr-down span,
+	.table tbody td.pr-up span,
+	.table tbody td p{
+		font-size: 12px;
+	}
+	.table tbody td.pr-cn,
+	.table tbody td.pr-down,
+	.table tbody td.pr-up{
+		padding-right: 7px;
+	}
+	.table tbody td{
+		font-size: 14px;
+		padding: 8px 4px;
+	}
+	.table tbody td.pr-cn span,
+	.table tbody td.pr-down span,
+	.table tbody td.pr-up span{
+		width: 80px;
+	}
+	/*Exchange Rate end*/
+	/* Divs Stake */
+	.stake-container .title-main{
+		margin-bottom: 50px;
+	}
+	.stake-container .title-main h2{
+		margin-bottom: 20px;
+	}
+
+	.divs-form{
+		padding-bottom: 0px;
+	}
+	.divs-form-wrapper h2{
+		font-size: 28px;
+		margin-bottom: 30px;
+	}
+
+	.divs-form-blk label{
+		font-size: 13px;
+	}
+	.divs-form-blk .form-control{
+		font-size: 14px;
+	}
+
+	.form-msg{
+		padding: 20px;
+		min-width: 290px;
+	}
+	.form-msg p{
+		width: 100%;
+		font-size: 14px;
+	}
+
+	.stake-block{
+		padding: 20px;
+	}
+	.stake-block label{
+		font-size: 12px;
+	}
+	.stake-block .form-control{
+		font-size: 14px;
+	}
+	.stake-block .btn-main{
+	    border-radius: 15px;
+	}
+
+	.divs-form-blk{
+		padding: 40px 30px;
+	}
+
+	.faqs-container{
+		padding-bottom: 0px;
+	}
+	.faqs-container .title-main{
+		margin-bottom: 50px;
+	}
+	.title-main p{
+	    line-height: 30px;
+	}
+	/* Divs Stake end */
+	/*inner page end*/
+}
+@media(min-width:992px) and (max-width:1024px){
+	/*comman*/
+	.btn-main{
+		font-size: 14px;
+	}
+
+	p{
+		font-size: 16px;
+	}
+
+	.title-main h2{
+		font-size: 36px;
+	}
+	/*comman end*/
+	/*header*/
+	.navbar .navbar-nav>li>a{
+		font-size: 14px;
+	}
+	/*header end*/
+	/*index*/
+	.banner-details h1{
+		font-size: 36px;
+	}
+	.banner-details p{
+		font-size: 20px;
+		line-height: 38px;
+		padding-right: 80px;
+	}
+
+	.banner-form{
+		padding: 28px 25px;
+	}
+	.banner-form .form-icon{
+	    right: 55px;
+	    top: -54px;
+	    width: 80px;
+	}
+	.banner-form label{
+		font-size: 14px;
+	}
+	.banner-form .form-control{
+		font-size: 14px;
+		padding-left: 95px;
+	}
+	.banner-form .btn-main{
+		font-size: 14px;
+	}
+
+	.advantage-wrap li{
+		padding: 25px;
+		min-height: 360px;
+	}
+	.advantage-wrap li span{
+	    min-height: 178px;
+	}
+	.advantage-wrap li span img{
+		max-width: 66%;
+	}
+	.advantage-wrap li p{
+		font-size: 13px;
+		margin-bottom: 0;
+	}
+
+	.road-map{
+		padding: 100px 0 50px;
+	}
+	.roadmap-wrap{
+		margin-top: 60px;
+	}
+	.roadmap-wrap ul li p{
+		font-size: 14px;
+		line-height: 24px;
+	}
+
+	.works-details p{
+		font-size: 16px;
+		line-height: 40px;
+	}
+
+	.quote-headline{
+	    padding: 30px;
+	}
+	.quote-headline p{
+		font-size: 14px;
+		margin-bottom: 20px;
+	}
+
+	.footer-list li{
+		margin-right: 30px;
+	}
+	.footer-list li a{
+		font-size: 14px;
+	}
+	/*index end*/
+	/*inner page*/
+	.token-wrapper .form-icon{
+ 	 	right: 50%;
+  		transform: translate(50%, 0);
+	}
+
+	/*Exchange Rate*/
+	.rate-table-blk{
+		padding: 15px;
+		padding-right: 0;
+	}
+	.title-search .form-control{
+		padding-left: 40px;
+	}
+	.table tbody td.pr-cn span,
+	.table tbody td.pr-down span,
+	.table tbody td.pr-up span,
+	.table tbody td p{
+		font-size: 12px;
+	}
+	.table tbody td.pr-cn,
+	.table tbody td.pr-down,
+	.table tbody td.pr-up{
+		padding-right: 7px;
+	}
+	.table tbody td{
+		font-size: 14px;
+		padding: 8px 4px;
+	}
+	.table tbody td.pr-cn span,
+	.table tbody td.pr-down span,
+	.table tbody td.pr-up span{
+		width: 80px;
+	}
+
+	.rate-table-blk table>thead>tr>th>.lst-icon,
+	.rate-table-blk table>thead>tr>th>.tab-up{
+		margin-left: 5px;
+	}
+	/*Exchange Rate end*/
+	/* Divs Stake */
+	.stake-container .title-main{
+		margin-bottom: 50px;
+	}
+	.stake-container .title-main h2{
+		margin-bottom: 20px;
+	}
+
+	.divs-form{
+		padding-bottom: 0px;
+	}
+	.divs-form-wrapper h2{
+		font-size: 28px;
+		margin-bottom: 30px;
+	}
+
+	.divs-form-blk label{
+		font-size: 13px;
+	}
+	.divs-form-blk .form-control{
+		font-size: 14px;
+	}
+
+	.form-msg{
+		padding: 20px;
+		min-width: 290px;
+	}
+	.form-msg p{
+		width: 100%;
+		font-size: 14px;
+	}
+
+	.stake-block{
+		padding: 20px;
+	}
+	.stake-block label{
+		font-size: 12px;
+	}
+	.stake-block .form-control{
+		font-size: 14px;
+	}
+	.stake-block .btn-main{
+	    border-radius: 15px;
+	}
+
+	.divs-form-blk{
+		padding: 40px 30px;
+	}
+
+	.faqs-container{
+		padding-bottom: 0px;
+	}
+	.faqs-container .title-main{
+		margin-bottom: 50px;
+	}
+	.title-main p{
+	    line-height: 30px;
+	}
+	/* Divs Stake end */
+	/*inner page end*/
+}
+@media(min-width:768px) and (max-width:991px){
+	
+	/*comman*/
+	.btn-main{
+		font-size: 14px;
+	}
+
+	p{
+		font-size: 16px;
+	}
+
+	.title-main h2{
+		font-size: 28px;
+	}
+	/*comman end*/
+	/*header*/
+	.navbar .navbar-nav>li{
+		margin-right: 5px;
+	}
+	.navbar .navbar-nav>li>a{
+		font-size: 14px;
+	}
+	/*header end*/
+	/*index*/
+	.banner-container{
+		padding: 140px 0 100px; 
+	}
+	.banner-details h1{
+		font-size: 26px;
+		line-height: 50px;
+	}
+	.banner-details p{
+		font-size: 20px;
+		line-height: 38px;
+		padding-right: 80px;
+	}
+
+	.banner-form{
+		padding: 28px 25px;
+	}
+	.banner-form .form-icon{
+	    right: 55px;
+	    top: -54px;
+	    width: 80px;
+	}
+	.banner-form label{
+		font-size: 14px;
+	}
+	.banner-form .form-control{
+		font-size: 14px;
+		padding-left: 95px;
+	}
+	.banner-form .btn-main{
+		font-size: 14px;
+	}
+
+	.advantage-wrap li{
+		padding: 15px;
+		min-height: 325px;
+	}
+	.advantage-wrap li span{
+	    min-height: 128px;
+	}
+	.advantage-wrap li span img{
+		max-width: 90%;
+	}
+	.advantage-wrap li p{
+		font-size: 13px;
+		margin-bottom: 0;
+	}
+
+	.road-map{
+		padding: 100px 0 50px;
+	}
+	.roadmap-wrap{
+		margin-top: 60px;
+	}
+	.roadmap-wrap ul li{
+		padding: 0;
+	}
+	.roadmap-wrap ul li p{
+		font-size: 14px;
+		line-height: 24px;
+	}
+
+	.works-details p{
+		font-size: 16px;
+		line-height: 40px;
+	}
+
+	.quote-headline{
+	    padding: 30px 15px;
+	}
+	.quote-headline p{
+		font-size: 14px;
+		margin-bottom: 20px;
+	}
+	.quote-block {
+	    background: url(../images/infographikold.png);
+	    background-repeat: no-repeat;
+	    background-size: 100% 100%;
+	}
+	.footer-list{
+		width: 65%;
+	}
+	.footer-list li{
+		margin-right: 15px;
+	}
+	.footer-list li a{
+		font-size: 13px;
+	}
+	.footer-logo a img{
+		width: 100px;
+		max-width: 100%;
+	}
+
+	.footer-social{
+		width: 15%;
+	}
+	.footer-social li a{
+		font-size: 20px;
+	}
+	.footer-social li:last-child a{
+		font-size: 16px;
+	}
+	/*index end*/
+	/*inner page*/
+	.token-wrapper .form-icon{
+ 	 	right: 50%;
+  		transform: translate(50%, 0);
+	}
+
+	/*Exchange Rate*/
+	.rate-table-blk{
+		padding: 15px;
+		padding-right: 0;
+	}
+	.title-search .form-control{
+		padding-left: 40px;
+	}
+	.table tbody td.pr-cn span,
+	.table tbody td.pr-down span,
+	.table tbody td.pr-up span,
+	.table tbody td p{
+		font-size: 12px;
+	}
+	.table tbody td.pr-cn,
+	.table tbody td.pr-down,
+	.table tbody td.pr-up{
+		padding-right: 7px;
+	}
+	.table tbody td{
+		font-size: 12px;
+		padding: 8px 2px;
+	}
+	.table tbody td.pr-cn span,
+	.table tbody td.pr-down span,
+	.table tbody td.pr-up span{
+		width: 80px;
+	}
+
+	.rate-table-blk table>thead>tr>th>.lst-icon,
+	.rate-table-blk table>thead>tr>th>.tab-up{
+		margin-left: 5px;
+	}
+	/*Exchange Rate end*/
+	/* Divs Stake */
+	.stake-container .title-main{
+		margin-bottom: 50px;
+	}
+	.stake-container .title-main h2{
+		margin-bottom: 20px;
+	}
+
+	.divs-form{
+		padding-bottom: 0px;
+	}
+	.divs-form-wrapper h2{
+		font-size: 28px;
+		margin-bottom: 30px;
+	}
+
+	.divs-form-blk label{
+		font-size: 13px;
+	}
+	.divs-form-blk .form-control{
+		font-size: 14px;
+	}
+
+	.form-msg{
+		padding: 20px;
+		min-width: 195px;
+	}
+	.form-msg p{
+		width: 100%;
+		font-size: 14px;
+	}
+
+	.stake-block{
+		padding: 20px;
+		margin-bottom: 20px;
+	}
+	.stake-block label{
+		font-size: 12px;
+	}
+	.stake-block .form-control{
+		font-size: 14px;
+	}
+	.stake-block .btn-main{
+	    border-radius: 15px;
+	    max-width: 100%;
+		width: 100%;
+		min-width: 100%;
+	}
+
+	.divs-form-blk{
+		padding: 40px 30px;
+	}
+
+	.faqs-container{
+		padding-bottom: 0px;
+	}
+	.faqs-container .title-main{
+		margin-bottom: 50px;
+	}
+	.title-main p{
+	    line-height: 30px;
+	}
+
+	.divs-form-blk .form-check>label{
+		font-size: 8px;
+	}
+	.divs-form-blk .form-check .label-text:before{
+		font-size: 14px;
+		margin-bottom: 5px;
+	}
+
+	.faq-wrapper .card-body p{
+		font-size: 14px;
+		line-height: 26px;
+	}
+	/* Divs Stake end */
+	/*inner page end*/
+}
+@media(min-width:448px) and (max-width:767px){
+	.mobileshow{display: block !important;}
+	.mobilehide{display: none !important;}
+	/*comman*/
+	.btn-main{
+		font-size: 14px;
+	}
+
+	p{
+		font-size: 14px;
+	}
+
+	.title-main h2{
+		line-height: 40px;
+		font-size: 24px;
+	}
+
+	.btn-group{
+		display: flex;
+		justify-content: center;
+	}
+	.btn-group li:first-child{margin-right: 10px}
+	.btn-group li{
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+	/*comman end*/
+	/*presale*/
+	.token-sale .row{flex-direction: column-reverse;}
+	.col-purchases{margin-top: 20px}
+	/*header*/
+	.navbar .navbar-collapse{
+		background-color: #201e34;
+		margin-top: 15px;
+	}
+	.navbar .navbar-nav{
+		padding: 15px 0 25px;
+	}
+	.navbar .navbar-nav>li{
+		margin-right: 0;
+	}
+	.navbar .navbar-nav>li>a{
+		font-size: 14px;
+		padding: 8px 0;
+	}
+	.navbar>.container .navbar-brand,
+	.navbar>.container-fluid .navbar-brand{
+		margin-left: 15px;
+	}
+	.pull-right{
+		float: none;
+	}
+	/*header end*/
+	/*index*/
+	.banner-container{
+		padding: 100px 0 100px; 
+	}
+	.banner-details{
+		margin-bottom: 80px;
+	}
+	.banner-details h1{
+		font-size: 26px;
+		line-height: 50px;
+	}
+	.banner-details p{
+		font-size: 16px;
+		line-height: 35px;
+		padding-right: 0px;
+	}
+
+	.banner-form{
+		max-width: 420px;
+		margin: 0 auto;
+		padding: 28px 25px;
+	}
+	.banner-form .form-icon{
+	    right: 55px;
+	    top: -54px;
+	    width: 80px;
+	}
+	.banner-form label{
+		font-size: 14px;
+	}
+	.banner-form .form-control{
+		font-size: 14px;
+		padding-left: 95px;
+	}
+	.banner-form .btn-main{
+		font-size: 14px;
+	}
+
+	.advantage-container{
+		padding-bottom: 40px;
+	}
+	.advantage-wrap ul{
+		display: block;
+	}
+	.advantage-wrap li{
+		max-width: 420px;
+		margin: 0 auto 20px;
+		width: 100%;
+		float: none;
+		padding: 30px 15px;
+		min-height: unset;
+	}
+	.advantage-wrap li span{
+	    min-height: 128px;
+	}
+	.advantage-wrap li span img{
+		max-width: 90%;
+	}
+	.advantage-wrap li p{
+		font-size: 13px;
+		margin-bottom: 0;
+		text-align: center;
+	}
+
+	.quote-container{
+		padding-bottom: 50px;
+	}
+	.quote-headline{
+	    padding: 30px 15px;
+	}
+	.quote-headline p{
+		font-size: 14px;
+		margin-bottom: 20px;
+	}
+	.quote-block {
+	    background: url(../images/infographikold.png);
+	    background-repeat: no-repeat;
+	    background-size: 100% 100%;
+	}
+
+	.road-map{
+		padding: 100px 0 50px;
+	}
+	.top-q{margin-left: 0%}
+	.bottom-q{margin-left: 0%;}
+	.roadmap-line-blk{
+		position: absolute;
+		width: 11px;
+		height: 110%;
+		background-color: #110f1e;
+    	border-radius: 20px;
+    	bottom: 10px;
+    	left: 20px;
+	}
+	.roadmap-line-blk .roadmap-line{
+		display: none;
+	}
+	.roadmap-wrap{
+		position: relative;
+		margin-top: 60px;
+	}
+	.roadmap-wrap ul.bottom-q li,
+	.roadmap-wrap ul.top-q li,
+	.roadmap-wrap ul li{
+		padding: 0;
+		width: 100%;
+		display: table;
+		margin-bottom: 40px;
+	}
+	.roadmap-wrap ul.bottom-q li span,
+	.roadmap-wrap ul.top-q li span,
+	.roadmap-wrap ul li span{
+		left: 0;
+		top: 0;
+		transform: translate(0, 0);
+	}
+	.roadmap-wrap ul li p{
+		float: right;
+		width: 100%;
+		padding-left: 80px;
+		font-size: 14px;
+		line-height: 24px;
+		text-align: left;
+	}
+
+	.works-details p{
+		font-size: 16px;
+		line-height: 40px;
+	}
+	
+
+	.footer-nav{
+		display: block;
+	}
+	.footer-logo{
+		width: 100%;
+		margin-bottom: 25px;
+	}
+	.footer-logo a img{
+		width: 100px;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	.footer-list{
+		width: 100%;
+		display: block;
+		margin-bottom: 20px;
+	}
+	.footer-list li{
+		justify-content: center;
+		margin-right: 0px;
+		margin-bottom: 10px;
+	}
+	.footer-list li a{
+		font-size: 13px;
+	}
+	.footer-social{
+		width: 100%;
+		margin-bottom: 20px;
+		justify-content: center;
+	}
+	.footer-social li a{
+		font-size: 20px;
+	}
+	.footer-social li:last-child{
+		margin-right: 0;
+	}
+	.footer-social li:last-child a{
+		font-size: 16px;
+	}
+	.footer-copyright{
+		margin-top: 15px;
+	}
+	.footer-copyright img{
+		width: 80px;
+	}
+	/*index end*/
+	/*inner-pages*/
+	.about-us{
+		padding-top: 0;
+	}
+	.about-us .title-main{
+		margin-bottom: 20px;
+	}
+	.about-details p{
+		text-align: center;
+		line-height: 34px;
+	}
+
+	.faqs-container{
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.faqs-container .title-main{
+		margin-bottom: 20px;
+	}
+	.faq-wrapper .card-body p{
+		font-size: 14px;
+		line-height: 30px;
+	}
+	.faq-wrapper .accordion .card{
+		padding: 30px;
+	}
+	.faq-wrapper .accordion .card h2{
+		font-size: 16px;
+	}
+
+	.stake-container .title-main h2{
+		margin-bottom: 20px;
+	}
+	.stake-container .title-main{
+		margin-bottom: 50px;
+	}
+	/*inner-pages end*/	
+	/*inner page*/
+	.token-wrapper .form-icon{
+ 	 	right: 50%;
+  		transform: translate(50%, 0);
+	}
+
+	/*Exchange Rate*/
+	.title-tabs{
+		width: auto;
+		display: table;
+		margin: 0 auto 20px;
+	}
+	.title-main h2{
+		margin-bottom: 20px;
+	}
+
+	.rate-table-blk{
+		padding: 15px;
+		padding-right: 0;
+	}
+	.title-search .form-control{
+		padding-left: 60px;
+	}
+	.table tbody td.pr-cn span,
+	.table tbody td.pr-down span,
+	.table tbody td.pr-up span,
+	.table tbody td p{
+		font-size: 12px;
+	}
+	.table tbody td.pr-cn,
+	.table tbody td.pr-down,
+	.table tbody td.pr-up{
+		padding-right: 7px;
+	}
+	.table tbody td{
+		font-size: 12px;
+		padding: 8px 2px;
+	}
+	.table tbody td.pr-cn span,
+	.table tbody td.pr-down span,
+	.table tbody td.pr-up span{
+		width: 80px;
+	}
+
+	.rate-table-blk table>thead>tr>th>.lst-icon,
+	.rate-table-blk table>thead>tr>th>.tab-up{
+		margin-left: 5px;
+	}
+
+	.rate-table-blk table>thead>tr>.tp-left{
+		font-size: 12px;
+	}
+	/*Exchange Rate end*/
+	/* Divs Stake */
+	.stake-container{
+		padding-top: 0;
+	}
+	.stake-container .title-main{
+		margin-bottom: 50px;
+	}
+	.stake-container .title-main h2{
+		margin-bottom: 20px;
+	}
+
+	.divs-form{
+		padding-bottom: 0px;
+	}
+	.divs-form-wrapper h2{
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+
+	.divs-form-blk label{
+		font-size: 13px;
+	}
+	.divs-form-blk .form-control{
+		font-size: 14px;
+	}
+	.divs-form-blk .form-group-blk:last-child .form-msg{
+		margin-bottom: 0;
+	}
+
+	.form-msg{
+		width: 100%;
+		margin: 0 auto;
+		min-height: auto;
+		padding: 20px;
+		min-width: 195px;
+		position: static;
+		margin-bottom: 40px;
+	}
+	.form-msg:after{
+		display: none;
+	}
+	.form-msg p{
+		width: 100%;
+		font-size: 14px;
+	}
+
+	.stake-block{
+		padding: 20px;
+		margin-bottom: 20px;
+	}
+	.stake-block label{
+		font-size: 12px;
+	}
+	.stake-block .form-control{
+		font-size: 14px;
+	}
+	.stake-block .btn-main{
+	    border-radius: 15px;
+	    max-width: 100%;
+		width: 100%;
+		min-width: 100%;
+	}
+
+	.divs-form-blk{
+		padding: 40px 30px;
+	}
+
+	.faqs-container{
+		padding-bottom: 0px;
+	}
+	.faqs-container .title-main{
+		margin-bottom: 50px;
+	}
+	.title-main p{
+	    line-height: 30px;
+	}
+
+	.divs-form-blk{
+		width: 100%;
+	}
+	.divs-form-blk .form-check>label{
+		font-size: 8px;
+	}
+	.divs-form-blk .form-check .label-text:before{
+		font-size: 14px;
+		margin-bottom: 5px;
+	}
+
+	.faq-wrapper .card-body p{
+		font-size: 14px;
+		line-height: 26px;
+	}
+
+	.form-check-blk{
+		padding: 20px 3px;
+	}
+	.form-check-blk .form-check{
+    	width: auto;
+    	margin-right: 10px;
+	}
+	/* Divs Stake end */
+	/*inner page end*/
+}
+@media(max-width:447px){
+	.mobileshow{display: block !important;}
+	.mobilehide{display: none !important;}
+	/*comman*/
+	.btn-main{
+		font-size: 14px;
+	}
+
+	p{
+		font-size: 14px;
+	}
+
+	.title-main h2{
+		line-height: 40px;
+		font-size: 24px;
+	}
+
+	.btn-group{
+		display: flex;
+		justify-content: center;
+	}
+	.btn-group li:first-child{margin-right: 10px}
+	.btn-group li{
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+	.btn-main{min-width: 160px;}
+	/*comman end*/
+	/*header*/
+	.navbar .navbar-collapse{
+		margin-top: 15px;
+		background-color: #201e34;
+	}
+	.navbar .navbar-nav{
+		padding: 15px 0 25px;
+	}
+	.navbar .navbar-nav>li{
+		margin-right: 0;
+	}
+	.navbar .navbar-nav>li>a{
+		font-size: 14px;
+		padding: 8px 0;
+	}
+	.navbar>.container .navbar-brand,
+	.navbar>.container-fluid .navbar-brand{
+		margin-left: 15px;
+	}
+	.pull-right{
+		float: none;
+	}
+	/*header end*/
+	/*presale*/
+	.token-sale .row{flex-direction: column-reverse;}
+	.col-purchases{margin-top: 20px}
+	/*index*/
+	.banner-container{
+		padding: 100px 0 100px; 
+	}
+	.banner-wrapper{
+		margin-top: 0;
+	}
+	.banner-details{
+		margin-bottom: 80px;
+	}
+	.banner-details h1{
+		font-size: 20px;
+		line-height: 38px;
+	}
+	.banner-details p{
+		font-size: 16px;
+		line-height: 35px;
+		padding-right: 0px;
+	}
+
+	.banner-form{
+		max-width: 420px;
+		margin: 0 auto;
+		padding: 28px 25px;
+	}
+	.banner-form .form-icon{
+	    right: 55px;
+	    top: -54px;
+	    width: 80px;
+	}
+	.banner-form label{
+		font-size: 14px;
+	}
+	.banner-form .form-control{
+		font-size: 14px;
+		padding-left: 95px;
+	}
+	.banner-form .btn-main{
+		font-size: 14px;
+	}
+
+	.advantage-container{
+		padding-bottom: 40px;
+	}
+	.advantage-wrap ul{
+		display: block;
+	}
+	.advantage-wrap li{
+		max-width: 420px;
+		margin: 0 auto 20px;
+		width: 100%;
+		float: none;
+		padding: 30px;
+		min-height: unset;
+	}
+	.advantage-wrap li span{
+	    min-height: 128px;
+	}
+	.advantage-wrap li span img{
+		max-width: 90%;
+	}
+	.advantage-wrap li p{
+		font-size: 14px;
+		text-align: center;
+		margin-bottom: 0;
+	}
+
+	.quote-container{
+		padding-bottom: 50px;
+	}
+	.quote-headline{
+	    padding: 30px 15px;
+	}
+	.quote-headline p{
+		font-size: 14px;
+		margin-bottom: 20px;
+	}
+	.quote-block {
+	    background: url(../images/infographikold.png);
+	    background-repeat: no-repeat;
+	    background-size: 100% 100%;
+	}
+
+	.road-map{
+		padding: 100px 0 50px;
+	}
+	.top-q{margin-left: 0%}
+	.bottom-q{margin-left: 0%;}
+	.roadmap-line-blk{
+		position: absolute;
+		width: 11px;
+		height: 110%;
+		background-color: #110f1e;
+    	border-radius: 20px;
+    	bottom: 10px;
+    	left: 20px;
+	}
+	.roadmap-line-blk .roadmap-line{
+		display: none;
+	}
+	.roadmap-wrap{
+		position: relative;
+		margin-top: 60px;
+	}
+	.roadmap-wrap ul.bottom-q li,
+	.roadmap-wrap ul.top-q li,
+	.roadmap-wrap ul li{
+		padding: 0;
+		width: 100%;
+		display: table;
+		margin-bottom: 40px;
+	}
+	.roadmap-wrap ul.bottom-q li span,
+	.roadmap-wrap ul.top-q li span,
+	.roadmap-wrap ul li span{
+		left: 0;
+		top: 0;
+		transform: translate(0, 0);
+	}
+	.roadmap-wrap ul li p{
+		float: right;
+		width: 100%;
+		padding-left: 80px;
+		font-size: 14px;
+		line-height: 24px;
+		text-align: left;
+	}
+
+	.works-details p{
+		font-size: 16px;
+		line-height: 40px;
+	}
+	
+
+	.footer-nav{
+		display: block;
+	}
+	.footer-logo{
+		width: 100%;
+		margin-bottom: 25px;
+	}
+	.footer-logo a img{
+		width: 100px;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	.footer-list{
+		width: 100%;
+		display: block;
+		margin-bottom: 20px;
+	}
+	.footer-list li{
+		justify-content: center;
+		margin-right: 0px;
+		margin-bottom: 10px;
+	}
+	.footer-list li a{
+		font-size: 13px;
+	}
+	.footer-social{
+		width: 100%;
+		margin-bottom: 20px;
+		justify-content: center;
+	}
+	.footer-social li a{
+		font-size: 20px;
+	}
+	.footer-social li:last-child{
+		margin-right: 0;
+	}
+	.footer-social li:last-child a{
+		font-size: 16px;
+	}
+	.footer-copyright{
+		margin-top: 15px;
+	}
+	.footer-copyright img{
+		width: 80px;
+	}
+	/*index end*/
+	/*inner-pages*/
+	.about-us{
+		padding-top: 0;
+	}
+	.about-us .title-main{
+		margin-bottom: 20px;
+	}
+	.about-details p{
+		text-align: center;
+		line-height: 34px;
+	}
+
+	.faqs-container{
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.faqs-container .title-main{
+		margin-bottom: 20px;
+	}
+	.faq-wrapper .card-body p{
+		font-size: 14px;
+		line-height: 30px;
+	}
+	.faq-wrapper .accordion .card{
+		padding: 30px 15px;
+	}
+	.faq-wrapper .accordion .card h2{
+		font-size: 14px;
+		line-height: 24px;
+	}
+
+	.stake-container .title-main h2{
+		margin-bottom: 20px;
+	}
+	.stake-container .title-main{
+		margin-bottom: 50px;
+	}
+	/*inner-pages end*/	
+	/*inner page*/
+	.token-wrapper .form-icon{
+ 	 	right: 50%;
+  		transform: translate(50%, 0);
+	}
+	.token-wrapper .banner-form{
+ 	 	padding: 60px 25px 28px;
+	}
+
+	.form-content-blk h5{
+		font-size: 16px;
+	}
+	.form-bottom-blk p, .form-content-blk p{
+		font-size: 13px;
+	}
+
+	/*Exchange Rate*/
+	.title-tabs{
+		width: auto;
+		display: table;
+		margin: 0 auto 20px;
+	}
+	.title-main h2{
+		margin-bottom: 20px;
+	}
+
+	.rate-table-blk{
+		padding: 15px;
+		padding-right: 0;
+	}
+	.rate-tab-content .row>.col-md-12>.rate-table-blk{
+		padding-right: 15px;
+	}
+	.title-search .form-control{
+		padding-left: 50px;
+	}
+	.table tbody td.pr-cn span,
+	.table tbody td.pr-down span,
+	.table tbody td.pr-up span,
+	.table tbody td p{
+		font-size: 12px;
+	}
+	.table tbody td.pr-cn,
+	.table tbody td.pr-down,
+	.table tbody td.pr-up{
+		padding-right: 7px;
+	}
+	.table tbody td{
+		font-size: 12px;
+		padding: 8px 8px;
+	}
+	.table tbody td.pr-cn span,
+	.table tbody td.pr-down span,
+	.table tbody td.pr-up span{
+		width: 80px;
+	}
+
+	.rate-table-blk table>thead>tr>th>.lst-icon,
+	.rate-table-blk table>thead>tr>th>.tab-up{
+		margin-left: 5px;
+	}
+
+	.rate-table-blk table>thead>tr>.tp-left{
+		font-size: 12px;
+	}
+
+	.tab-btn .btn-main{
+		width: auto;
+	}
+	/*Exchange Rate end*/
+	/* Divs Stake */
+	.stake-container{
+		padding-top: 0;
+	}
+	.stake-container .title-main{
+		margin-bottom: 50px;
+	}
+	.stake-container .title-main h2{
+		margin-bottom: 20px;
+	}
+
+	.divs-form{
+		padding-top: 40px;
+		padding-bottom: 0px;
+	}
+	.divs-form-wrapper h2{
+		font-size: 20px;
+		line-height: 28px;
+		margin-bottom: 15px;
+	}
+
+	.divs-form-blk label{
+		font-size: 13px;
+	}
+	.divs-form-blk .form-control{
+		padding: 24px 15px;
+		font-size: 14px;
+	}
+	.divs-form-blk .form-group-blk:last-child .form-msg{
+		margin-bottom: 0;
+	}
+	.pr-blk .pr-icon{
+		right: 4%;
+	}
+
+	.form-msg{
+		width: 100%;
+		margin: 0 auto;
+		min-height: auto;
+		padding: 10px;
+		min-width: 195px;
+		position: static;
+		margin-bottom: 40px;
+	}
+	.form-msg:after{
+		display: none;
+	}
+	.form-msg p{
+		text-align: left;
+		width: 100%;
+		font-size: 12px;
+	}
+
+	.stake-block{
+		padding: 20px;
+		margin-bottom: 20px;
+	}
+	.stake-block label{
+		font-size: 12px;
+	}
+	.stake-block .form-control{
+		font-size: 14px;
+	}
+	.stake-block .btn-main{
+	    border-radius: 15px;
+	    max-width: 100%;
+		width: 100%;
+		min-width: 100%;
+	}
+
+	.divs-form-blk{
+		padding: 30px 15px;
+	}
+
+	.faqs-container{
+		padding-bottom: 0px;
+	}
+	.faqs-container .title-main{
+		margin-bottom: 0px;
+	}
+	.faq-wrapper .accordion{
+		margin-top: 0;
+	}
+	.title-main p{
+	    line-height: 30px;
+	}
+
+	.divs-form-blk{
+		width: 100%;
+	}
+	.divs-form-blk .form-check>label{
+		font-size: 12px;
+	}
+	.divs-form-blk .form-check .label-text:before{
+		font-size: 14px;
+		display: inline-block;
+		margin-bottom: 0;
+		margin-right: 10px;
+		text-align: center;
+		padding: 2px 0;
+	}
+
+	.faq-wrapper .card-body p{
+		font-size: 14px;
+		line-height: 26px;
+	}
+
+	.form-check-blk{
+		display: block;
+		padding: 20px 3px;
+		margin-bottom: 40px;
+	}
+	.form-check-blk:before{
+		top: 10px;
+		left: 4px;
+		width: 8px;
+		height: 95%;
+		transform: translate(50%,0);
+	}
+	.form-check-blk .form-check{
+    	width: auto;
+    	display: block;
+    	margin: 10px 0;
+	}
+	/* Divs Stake end */
+	/*inner page end*/
+}
+

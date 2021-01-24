@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css?ver=1.001" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <link rel="icon" href="images/favicon.png" type="image/gif" sizes="10x16">
+    <title>Divs Stake - Divs</title>
+</head>
+<body style="background-image: url('images/inner-bg.jpg'); background-size: contain; background-position: top center; background-repeat: no-repeat;">
+    <!-- Header -->
+    <nav class="navbar navbar-expand-md wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.20s">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="LOGO"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav pull-right">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#exchangemodal">Exchange</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tokensale.html">Coin / Token List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="stake.html">Staking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Whitepaper.pdf">White Paper</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="presale.html">Presale</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">AboutUs</a>
+                    </li>
+                </ul>
+            </div>  
+        </div>
+    </nav>
+    <!-- Header -->
+
+    <div class="inner-main">
+        <!-- Stake -->
+        <section class="stake-container wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.20s">
+            <div class="container">
+                <div class="title-main">
+                    <h2>Place Your Stake</h2>
+
+                    <p>Stake your DIVS tokens Below to receive Tron rewards based your percentage of the staking pool. Exchange fees equivalent to .5% of the Divs exchange volume get distributed to stakers weekly on Mondays at 12am UTC.</p>
+                    <ul class="btn-group wow fadeInDown" data-wow-duration="1s" data-wow-delay="00s">
+                        <li><a href="#" class="btn-main">Buy DIVS tokens</a></li>
+                        <li><a href="Whitepaper.pdf" class="btn-main">Whitepaper</a></li>
+                    </ul>
+                </div>
+                <div class="stake-wrapper">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="stake-block">
+                                <label>Your staked Tokens</label>
+                                <h4 class="stakevalue">0.000</h4>
+                            </div>
+                            <div class="stake-block">
+                                <label>Select the amount of staking</label>
+                                <input type="text" class="form-control" placeholder="4,873">
+                                <a href="#" class="btn-main btn-light">Deposit</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="stake-block">
+                                <label>Total token in the staking pool</label>
+                                <h4 class="stakevalue">0.000</h4>
+                            </div>
+                            <div class="stake-block">
+                                <label>Unclaimed Tron</label>
+                                <h4 class="stakevalue stakevaluem">0.000</h4>
+                                <a href="#" class="btn-main">Claim</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="stake-block">
+                                <label>Your percentage of the staking pool</label>
+                                <h4 class="stakevalue">0.000</h4>
+                            </div>
+                            <div class="stake-block">
+                                <label>Select the amount of staking</label>
+                                <input type="text" class="form-control" placeholder="4,873">
+                                <a href="#" class="btn-main btn-light">Withdraw</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Stake -->
+
+        <!-- Divs Form -->
+        <section class="divs-form wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.20s">
+            <div class="container">
+                <div class="divs-form-wrapper">
+                    <div class="divs-form-blk">
+                        <h2>DIVS Token Holder Reward Calculator</h2>    
+                        <form>
+                            <div class="form-group-blk">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label>Input the current token price</label>
+                                            <input type="number" placeholder="$ 0.1" class="form-control dark-bg formulaipt" id="currentToken" min="0.001" max="10000">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label>Number of DIVS tokens you stake</label>
+                                            <input type="number" placeholder="1" class="form-control dark-bg formulaipt" id="divNumber" min="0.001" max="10000000">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-msg">
+                                    <p>Earn your share of the Rewards</p>
+                                </div> 
+                            </div>
+                            <div class="form-group-blk">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Amount in USD</label>
+                                            <input type="number" placeholder="$ 0.1" class="form-control formulaipt" id="usdAmount" disabled>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="form-group-blk">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Total amount of DIVS tokens in the staking pool</label>
+                                            <input type="number" placeholder="0" class="form-control dark-bg formulaipt" id="totalStakingDiv" min="0.001" max="10000000">
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="form-msg">
+                                    <p>Stake your DIVS Tokens and receive rewards in tron</p>
+                                </div> 
+                            </div>
+                            <div class="form-group-blk">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Your percentage of the staking pool</label>
+                                            <div class="pr-blk">
+                                                <input type="number" placeholder="0.0000" class="form-control formulaipt" id="percentStaking" disabled>
+                                                <span class="pr-icon">%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="form-group-blk">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Adjust the weekly exchange volume</label>
+                                           <!--  <div class="form-check-blk">
+                                                <div class="form-check">
+                                                    <label>
+                                                        <input type="radio" name="radio" checked> <span class="label-text">100.000</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <label>
+                                                        <input type="radio" name="radio"> <span class="label-text">300.000</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <label>
+                                                        <input type="radio" name="radio"> <span class="label-text">600.000</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <label>
+                                                        <input type="radio" name="radio"> <span class="label-text">900.000</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <label>
+                                                        <input type="radio" name="radio"> <span class="label-text">12.000.000</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <label>
+                                                        <input type="radio" name="radio"> <span class="label-text">15.000.000</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <label>
+                                                        <input type="radio" name="radio"> <span class="label-text">18.000.000</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <label>
+                                                        <input type="radio" name="radio"> <span class="label-text">200.000.000</span>
+                                                    </label>
+                                                </div>
+                                            </div> -->
+
+
+                                            <div class="range-slider">
+                                              <input class="range-slider__range formulaipt" type="range" value="100" min="0" max="200">
+                                              <span class="range-slider__value">1000000</span>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="form-group-blk">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>total amount distributed to DIVS token holders (.5% of the weekly volume)</label>
+                                            <input type="text" placeholder="$ 0.00000" class="form-control" id="totalDistributed" disabled>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="form-msg">
+                                    <p>.5% of the total exchange volume get distributed to DIVS token stakers weekly</p>
+                                </div>
+                            </div>
+                            <div class="form-group-blk">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Your weekly Rewards</label>
+                                            <input type="text" placeholder="$ 0.00000" class="form-control" id="weeklyReward" disabled>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="form-group-blk">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Your 1 year rewards</label>
+                                            <input type="text" placeholder="$ 0.00000" class="form-control" id="oneyReward" disabled>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="form-group-blk">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Your 5 year rewards</label>
+                                            <input type="text" placeholder="$ 0.00000" class="form-control" id="fiveyReward" disabled>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="form-msg">
+                                    <p>Less Tokens in the staking pool will equal more rewards for those currently staking</p>
+                                </div>
+                            </div>
+                        </form> 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Divs Form -->
+
+        
+    </div>
+
+    <div id="exchangemodal" class="modal fade ExchangeM" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+           <div class="banner-form"> 
+                <h4>Exchange</h4>
+                <form>
+                    <div class="form-group-blk">
+                        <label>You Send</label>
+                        <div class="form-group">
+                            <div class="frm-drop">
+                                <select class="form-control">
+                                    <option>ETH</option>
+                                    <option>ETH</option>
+                                    <option>ETH</option>
+                                </select>
+                            </div>
+                            <input type="number" placeholder="1.000000" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group-blk">
+                        <label>You get</label>
+                        <div class="form-group">
+                            <div class="frm-drop">
+                                <select class="form-control">
+                                    <option>TRX</option>
+                                    <option>TRX</option>
+                                    <option>TRX</option>
+                                </select>
+                            </div>
+                            <input type="number" placeholder="17473.355609" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group-btn">
+                        <button type="submit" class="btn-main">Exchange</button>
+                    </div>
+                </form>
+            </div> 
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.20s">
+        <div class="container">
+            <div class="footer-nav">
+                <div class="footer-logo">
+                    <a href="#"><img src="images/logo.png" alt="logo"></a>
+                </div>
+                <ul class="footer-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#exchangemodal">Exchange</a></li>
+                    <li><a href="tokensale.html">Coin / Token List</a></li>
+                    <li><a href="stake.html">Staking</a></li>
+                    <li><a href="Whitepaper.pdf">White Paper</a></li>
+                    <li><a href="presale.html">Presale</a></li>
+                    <li><a href="about.html">AboutUs</a></li>
+                </ul>
+                <ul class="footer-social">
+                    <li><a href="https://twitter.com/DivsExchange"><i class="fa fa-twitter"></i></a></li>
+                   <li><a href="http://divs.chat"><i class="fa fa-paper-plane"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-copyright">
+                <a href="#"><img src="images/cop-logo.png" alt="icon"></a>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script type="text/javascript" src="js/jquery.min.js"></script> 
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript">
+        //wow animation js
+        new WOW().init();
+        var slider_variable=0;
+    </script>
+    <!-- range slider -->
+    <script type="text/javascript">
+        // First let's set the colors of our sliders
+        const settings={
+          fill: '#7f849a',
+          background: '#303353'
+        }
+
+        // First find all our sliders
+        const sliders = document.querySelectorAll('.range-slider');
+
+        // Iterate through that list of sliders
+        // ... this call goes through our array of sliders [slider1,slider2,slider3] and inserts them one-by-one into the code block below with the variable name (slider). We can then access each of wthem by calling slider
+        Array.prototype.forEach.call(sliders,(slider)=>{
+          // Look inside our slider for our input add an event listener
+        //   ... the input inside addEventListener() is looking for the input action, we could change it to something like change
+          slider.querySelector('input').addEventListener('input', (event)=>{
+            // 1. apply our value to the span
+            slider_variable = 1000000*(event.target.value);
+            slider.querySelector('span').innerHTML = slider_variable;
+            // 2. apply our fill to the input
+            applyFill(event.target);
+          });
+          // Don't wait for the listener, apply it now!
+          applyFill(slider.querySelector('input'));
+        });
+
+        // This function applies the fill to our sliders by using a linear gradient background
+        function applyFill(slider) {
+          // Let's turn our value into a percentage to figure out how far it is in between the min and max of our input
+          const percentage = 100*(slider.value-slider.min)/(slider.max-slider.min);
+          // now we'll create a linear gradient that separates at the above point
+          // Our background color will change here
+          const bg = `linear-gradient(90deg, ${settings.fill} ${percentage}%, ${settings.background} ${percentage+0.1}%)`;
+          slider.style.background = bg;
+        }
+    </script>
+    <script type="text/javascript">
+        var divstakers=0,weekrewards=0,oneyReward=0,fiveyReward=0,percentStaking=0,usdAmount=0;
+        $( ".formulaipt" ).on( "input", function( event ) {
+           
+
+
+            var currentToken = parseFloat($("#currentToken").val());
+            var divNumber = parseFloat($("#divNumber").val());
+            // var usdAmount = parseFloat($("#usdAmount").val());
+            var totalStakingDiv = parseFloat($("#totalStakingDiv").val());
+            // var percentStaking = parseFloat($("#percentStaking").val());
+            
+            //slider variable  = slider_variable
+
+            if(!isNaN(currentToken) && !isNaN(slider_variable) && !isNaN(divNumber) )
+            {
+                usdAmount = currentToken*divNumber;
+
+                percentStaking = (divNumber/totalStakingDiv)*100;
+
+                divstakers = slider_variable*(0.005);
+
+                weekrewards = (divstakers*percentStaking)/100;
+
+                oneyReward = weekrewards*52;
+
+                fiveyReward = oneyReward*5;
+                $("#usdAmount").val(usdAmount)
+                $("#percentStaking").val(percentStaking.toFixed(2))
+                $("#totalDistributed").val(divstakers.toFixed(2));
+                $("#weeklyReward").val(weekrewards.toFixed(2));
+                $("#oneyReward").val(oneyReward.toFixed(2));
+                $("#fiveyReward").val(fiveyReward.toFixed(2))
+            }
+            
+
+        });
+
+    $( ".formulaipt" ).on( "change", function() {
+
+
+       if((parseFloat($(this).val()) < parseFloat($(this).attr("min")))){
+             $(this).addClass("buzz-out-on-hover");
+             $(this).val($(this).attr("min"))
+        }else if(parseFloat($(this).val()) > parseFloat($(this).attr("max"))){
+            $(this).addClass("buzz-out-on-hover");
+            $(this).val($(this).attr("max"))
+        }
+        else{
+             $(this).removeClass("buzz-out-on-hover")
+        }
+    });
+    </script>
+</body>
+</html>
