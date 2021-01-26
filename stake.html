@@ -810,48 +810,7 @@
         
         
             })
-        
-        
-        
-            function time() {
-        
-               var d1 = new Date();
-        
-               var d2 = Date.UTC(d1.getUTCFullYear(),
-        
-                                 d1.getUTCMonth(),
-        
-                                 d1.getUTCDate() + (d1.getUTCHours() < 12 ? 0 : 1),
-        
-                                 12);
-        
-               var dh = d2 - d1;
-        
-               var hours = Math.floor(dh / 3600000);
-        
-               var dm = dh - 3600000 * hours;
-        
-               var min = Math.floor(dm / 60000);
-        
-               var ds = dm - 60000 * min;
-        
-               var sec = Math.floor(ds / 1000);
-        
-               var dmilli = ds - 1000 * sec;
-        
-               setTimeout(time, dmilli);
-        
-               hours = ('0' + hours).slice(-2);
-        
-               min = ('0' + min).slice(-2);
-        
-               sec = ('0' + sec).slice(-2);
-        
-               document.getElementById('time').innerHTML = ( hours + 'h ' + min + 'm ' + sec + 's ')
-        
-            }
-        
-            time()
+
         
           </script>
 </body>
