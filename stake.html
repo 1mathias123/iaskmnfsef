@@ -637,7 +637,7 @@
         
                 const total = await stakeHandlerInstance.calculateMyCurrentCycleRewards().call()
         
-                document.getElementById('estimated_payout').innerHTML = roundToTwoOrFour(parseFloat(total._hex, 16)/tokenSelected.decimals)
+                document.getElementById('estimated_payout').innerHTML = roundToTwoOrFour(parseFloat(total._hex, 16)/1000000)
         
               }
         
