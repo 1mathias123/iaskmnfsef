@@ -69,7 +69,7 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="stake-block">
                                 <label>Your staked Tokens</label>
-                                <h4 class="stakevalue">0.000</h4>
+                                <h4 class="stakevalue" id="user_staked">0.000</h4>
                             </div>
                             <div class="stake-block">
                                 <label>Select the amount of staking</label>
@@ -456,5 +456,403 @@
         }
     });
     </script>
+        <script type="text/javascript">
+
+            //wow animation js
+      
+            new WOW().init();
+      
+          </script>
+        <script>
+
+
+
+            $(document).ready(function() {
+        
+              const config_json = {
+        
+                HXYT: {
+        
+                  tokenAddress: 'TVAAQyNZ5Dj8nfTAJnhW5KxCvLZ5oSMFFy',
+        
+                  stakeDataAddress: 'TRHCUSnSb4wmQG1teB5CdEjBo2Htjr8dJq',
+        
+                  stakeHandlerAddress: 'TSVohFTYkYmtHTZFvLZJjTWbXyuvTuxMCp',
+        
+                  decimals: 1e8,
+        
+                }
+        
+              }
+        
+        
+        
+              //rounding functions
+        
+              function parseFloat(str, radix) {
+        
+                let parts = str.split(".");
+        
+                if ( parts.length > 1 ) {
+        
+                  return parseInt(parts[0], radix) + parseInt(parts[1], radix) / Math.pow(radix, parts[1].length);
+        
+                }
+        
+                return parseInt(parts[0], radix);
+        
+              }
+        
+        
+        
+              function abbreviateNumber(num)
+        
+              {
+        
+                if(num >= 1000000)
+        
+                  return roundToTwoOrFour(num/1000000)+'M';
+        
+                if(num >= 1000)
+        
+                  return roundToTwoOrFour(num/1000)+'k';
+        
+                return (num);
+        
+              }
+        
+        
+        
+              function roundToFour(num) {
+        
+                return +(Math.floor(num + 'e+4') + 'e-4')
+        
+              }
+        
+        
+        
+              function roundToTwo(num) {
+        
+                return +(Math.floor(num + 'e+2') + 'e-2')
+        
+              }
+        
+        
+        
+              function round(num) {
+        
+                return +(Math.floor(num + 'e+0') + 'e-0')
+        
+              }
+        
+        
+        
+              function roundToTwoOrFour(num){
+        
+                if(num<1) return roundToFour(num)
+        
+                return roundToTwo(num)
+        
+              }
+        
+        
+        
+              //updateHTML
+        
+              let selected = "HXYT"
+        
+        
+        
+              setInterval(()=>{
+        
+                tokenSelected = config_json[selected]
+        
+                updateStakedBalance(tokenSelected)
+        
+                updateTotalStaked(tokenSelected)
+        
+                updateCycleRewards(tokenSelected)
+        
+                updateRewards(tokenSelected)
+        
+                updateUserAddy()
+        
+              }, 2000)
+        
+              setInterval(()=>{
+        
+                updateTotal()
+        
+              }, 5000)
+        
+        
+        
+              async function updateUserAddy() {
+        
+                if(!tronWeb.defaultAddress.base58) return
+        
+                let bal = await tronWeb.contract().at('TVAAQyNZ5Dj8nfTAJnhW5KxCvLZ5oSMFFy')
+        
+                bal = await bal.balanceOf(tronWeb.defaultAddress.base58).call()
+        
+                const addy = tronWeb.defaultAddress.base58.slice(0,5) +'... '+ abbreviateNumber(parseInt(bal._hex,16)/1e8) + ' HXYT'
+        
+                document.getElementById('user_addy').innerHTML = addy
+        
+              }
+        
+        
+        
+              async function updateStakedBalance(tokenSelected) {
+        
+                stakeDataInstance = await tronWeb.contract().at(tokenSelected.stakeDataAddress)
+        
+                const stakedBalance = await stakeDataInstance.getMyStakeedTokens().call()
+        
+                document.getElementById('user_staked').innerHTML = roundToTwoOrFour(parseFloat(stakedBalance._hex, 16)/tokenSelected.decimals)
+        
+                document.getElementById('user_staked1').innerHTML = roundToTwoOrFour(parseFloat(stakedBalance._hex, 16)/tokenSelected.decimals)
+        
+                document.getElementById('total_earnings').innerHTML = roundToTwoOrFour(parseFloat(stakedBalance._hex, 16)/tokenSelected.decimals)
+        
+              }
+        
+        
+        
+              async function updateTotalStaked(tokenSelected) {
+        
+                stakeDataInstance = await tronWeb.contract().at(tokenSelected.stakeDataAddress)
+        
+                const total = await stakeDataInstance.getTokenBalance().call()
+        
+                document.getElementById('total_staked').innerHTML = roundToTwoOrFour(parseFloat(total._hex, 16)/tokenSelected.decimals)
+        
+              }
+        
+        
+        
+              async function updateCycleRewards(tokenSelected) {
+        
+                stakeHandlerInstance = await tronWeb.contract().at(tokenSelected.stakeHandlerAddress)
+        
+                const total = await stakeHandlerInstance.calculateMyCurrentCycleRewards().call()
+        
+                document.getElementById('estimated_payout').innerHTML = roundToTwoOrFour(parseFloat(total._hex, 16)/tokenSelected.decimals)
+        
+              }
+        
+        
+        
+              async function updateRewards(tokenSelected) {
+        
+                stakeHandlerInstance = await tronWeb.contract().at(tokenSelected.stakeHandlerAddress)
+        
+                const total = await stakeHandlerInstance.calculateMyRewardsSinceLastClaim().call()
+        
+                document.getElementById('total_earnings1').innerHTML = roundToTwoOrFour(parseFloat(total._hex, 16)/tokenSelected.decimals)
+        
+              }
+        
+        
+        
+              async function updateTotal(){
+        
+                  if(config_json['LIGHTMATTER']) lightmatterContract = await tronWeb.contract().at(config_json['LIGHTMATTER'].stakeHandlerAddress)
+        
+                  if(config_json['DARKMATTER']) darkmatterContract = await tronWeb.contract().at(config_json['DARKMATTER'].stakeHandlerAddress)
+        
+                  if(config_json['VOID']) voidContract = await tronWeb.contract().at(config_json['VOID'].stakeHandlerAddress)
+        
+                  if(config_json['FRAG']) fragContract = await tronWeb.contract().at(config_json['FRAG'].stakeHandlerAddress)
+        
+                  const totalLight = await stakeHandlerInstance.getAvailableBalance().call()
+        
+                  const totalDark = await stakeHandlerInstance.getAvailableBalance().call()
+        
+                  const totalVoid = await stakeHandlerInstance.getAvailableBalance().call()
+        
+                  const totalFrag = await stakeHandlerInstance.getAvailableBalance().call()
+        
+                  if(config_json['LIGHTMATTER']) document.getElementById('lmh-total').innerHTML = roundToTwoOrFour(parseFloat(totalLight._hex, 16)/config_json['LIGHTMATTER'].decimals)
+        
+                  if(config_json['DARKMATTER']) document.getElementById('dmd-total').innerHTML = roundToTwoOrFour(parseFloat(totalDark._hex, 16)/config_json['DARKMATTER'].decimals)
+        
+                  if(config_json['VOID']) document.getElementById('void-total').innerHTML = roundToTwoOrFour(parseFloat(totalVoid._hex, 16)/config_json['VOID'].decimals)
+        
+                  if(config_json['FRAG']) document.getElementById('frag-total').innerHTML = roundToTwoOrFour(parseFloat(totalFrag._hex, 16)/config_json['FRAG'].decimals)
+        
+              }
+        
+              /*
+        
+              async function updateNextPayout() {
+        
+                stakingInstance = await tronWeb.contract().at(stakingAddress)
+        
+                const date = new Date()
+        
+                let nextPayoutAt = await stakingInstance.nextPayoutAt().call()
+        
+                nextPayoutAt = new Date(parseInt(nextPayoutAt._hex)*1000)
+        
+                let timeLeft = nextPayoutAt - date
+        
+                setInterval(()=>{
+        
+                  var seconds = Math.floor((timeLeft / 1000) % 60);
+        
+                  var minutes = Math.floor((timeLeft / 1000 / 60) % 60);
+        
+                  var hours = Math.floor((timeLeft / (1000 * 60 * 60)) % 24);
+        
+                  timeLeft = timeLeft - 1000
+        
+                  document.getElementById('time-left').innerHTML = `${('0'+hours).slice(-2)}:${('0'+minutes).slice(-2)}:${('0'+seconds).slice(-2)}`
+        
+                },1000)
+        
+              }
+        
+              */
+        
+              /*
+        
+              async function apy() {
+        
+                stakingInstance = await tronWeb.contract().at(stakingAddress)
+        
+                const rewardRate = await stakingInstance.rewardRate().call()
+        
+                const totalSupply = await stakingInstance.totalSupply().call()
+        
+                document.getElementById('apy').innerHTML = roundToTwoOrFour(parseFloat(totalSupply._hex, 16)/parseFloat(rewardRate._hex, 16))
+        
+              }
+        
+              */
+        
+        
+        
+              async function stake() {
+        
+                tokenInstance = await tronWeb.contract().at(tokenSelected.tokenAddress)
+        
+                let amount = document.getElementById('stake_amount').value
+        
+                amount = amount * tokenSelected.decimals
+        
+                const bytes = '0x000000000000000000000000000000000000000000000000000000000000000'
+        
+                await tokenInstance.methods.approveAndCall(tokenSelected.stakeDataAddress, amount, bytes).send()
+        
+              }
+        
+        
+        
+        
+        
+              async function unstake() {
+        
+                stakeDataInstance = await tronWeb.contract().at(tokenSelected.stakeDataAddress)
+        
+                const amount = document.getElementById('unstake_amount').value
+        
+                await stakeDataInstance.unstakeTokens(amount*tokenSelected.decimals).send()
+        
+              }
+        
+        
+        
+              async function claim() {
+        
+                stakeHandlerInstance = await tronWeb.contract().at(tokenSelected.stakeHandlerAddress)
+        
+                await stakeHandlerInstance.claimRewards().send()
+        
+              }
+        
+        
+        
+              $('#click-left').click(function(err) {
+        
+                 selected = document.getElementById('arrow-left').innerHTML.replace(' ', '').toUpperCase()
+        
+              })
+        
+              $('#click-right').click(function(err) {
+        
+                 selected = document.getElementById('arrow-right').innerHTML.replace(' ', '').toUpperCase()
+        
+              })
+        
+              $( "#stake" ).click(function() {
+        
+                stake()
+        
+              })
+        
+        
+        
+              $( "#unstake" ).click(function() {
+        
+                unstake()
+        
+              })
+        
+        
+        
+              $( "#claim" ).click(function() {
+        
+                claim()
+        
+              })
+        
+        
+        
+            })
+        
+        
+        
+            function time() {
+        
+               var d1 = new Date();
+        
+               var d2 = Date.UTC(d1.getUTCFullYear(),
+        
+                                 d1.getUTCMonth(),
+        
+                                 d1.getUTCDate() + (d1.getUTCHours() < 12 ? 0 : 1),
+        
+                                 12);
+        
+               var dh = d2 - d1;
+        
+               var hours = Math.floor(dh / 3600000);
+        
+               var dm = dh - 3600000 * hours;
+        
+               var min = Math.floor(dm / 60000);
+        
+               var ds = dm - 60000 * min;
+        
+               var sec = Math.floor(ds / 1000);
+        
+               var dmilli = ds - 1000 * sec;
+        
+               setTimeout(time, dmilli);
+        
+               hours = ('0' + hours).slice(-2);
+        
+               min = ('0' + min).slice(-2);
+        
+               sec = ('0' + sec).slice(-2);
+        
+               document.getElementById('time').innerHTML = ( hours + 'h ' + min + 'm ' + sec + 's ')
+        
+            }
+        
+            time()
+        
+          </script>
 </body>
 </html>
