@@ -471,13 +471,13 @@
         
               const config_json = {
         
-                HXYT: {
+                DIVS: {
         
-                  tokenAddress: 'TVAAQyNZ5Dj8nfTAJnhW5KxCvLZ5oSMFFy',
+                  tokenAddress: 'TRXmYPy2AXZxacoSbKGjiVto8K1EqwexU7',
         
-                  stakeDataAddress: 'TRHCUSnSb4wmQG1teB5CdEjBo2Htjr8dJq',
+                  stakeDataAddress: 'TLVroKNfndt4znndobpWzkNqtdgeJj3Wyv',
         
-                  stakeHandlerAddress: 'TSVohFTYkYmtHTZFvLZJjTWbXyuvTuxMCp',
+                  stakeHandlerAddress: 'TWgp1D8TmiiryHPmLpP2kJKMVPdxiEbaWm',
         
                   decimals: 1e8,
         
@@ -559,7 +559,7 @@
         
               //updateHTML
         
-              let selected = "HXYT"
+              let selected = "DIVS"
         
         
         
@@ -595,7 +595,7 @@
         
                 bal = await bal.balanceOf(tronWeb.defaultAddress.base58).call()
         
-                const addy = tronWeb.defaultAddress.base58.slice(0,5) +'... '+ abbreviateNumber(parseInt(bal._hex,16)/1e8) + ' HXYT'
+                const addy = tronWeb.defaultAddress.base58.slice(0,5) +'... '+ abbreviateNumber(parseInt(bal._hex,16)/1e8) + ' DIVS'
         
                 document.getElementById('user_addy').innerHTML = addy
         
