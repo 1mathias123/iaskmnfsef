@@ -69,7 +69,7 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="stake-block">
                                 <label>Your staked Tokens</label>
-                                <h4 class="stakevalue" id="user_staked">0.000</h4>
+                                <h4 class="stakevalue" id="user_staked">0.000</h4><h4> Trx</h4>
                             </div>
                             <div class="stake-block">
                                 <label>Select the amount of staking</label>
@@ -637,7 +637,7 @@
         
                 const total = await stakeHandlerInstance.calculateMyCurrentCycleRewards().call()
         
-                document.getElementById('estimated_payout').innerHTML = roundToTwoOrFour(parseFloat(total._hex, 16)/tokenSelected.decimals + ' Trx')
+                document.getElementById('estimated_payout').innerHTML = roundToTwoOrFour(parseFloat(total._hex, 16)/tokenSelected.decimals)
         
               }
         
